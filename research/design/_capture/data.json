@@ -1,0 +1,935 @@
+{
+  "linear": {
+    "url": "https://linear.app/",
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://linear.app/",
+    "title": "Linear – The system for product development",
+    "metaDescription": "Purpose-built for planning and building products with AI agents.",
+    "themeColor": "#08090a",
+    "bodyBg": "rgb(8, 9, 10)",
+    "bodyColor": "rgb(247, 248, 248)",
+    "bodyFont": "\"Inter Variable\", \"SF Pro Display\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+    "h1": "The product development system for teams and agents The product development system for teams and agents",
+    "h1Style": {
+      "fontFamily": "\"Inter Variable\", \"SF Pro Display\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif",
+      "fontSize": "64px",
+      "fontWeight": "510",
+      "lineHeight": "64px",
+      "letterSpacing": "-1.408px",
+      "color": "rgb(247, 248, 248)",
+      "textTransform": "none"
+    },
+    "h2s": [
+      "A new species of product tool. Purpose-built for modern teams with AI workflows at its core, Linear sets a new standard ",
+      "Intake and integrations",
+      "Planning and monitoring",
+      "AI and automations",
+      "Build, review, and ship",
+      "Changelog",
+      "Built for the future. Available today."
+    ],
+    "navLinks": [
+      "Customers",
+      "Pricing",
+      "Now",
+      "Contact",
+      "Docs",
+      "Open app",
+      "Log in",
+      "Sign up"
+    ],
+    "ctaCandidates": [
+      "Contact",
+      "Open app",
+      "Sign up",
+      "Get started",
+      "Contact sales",
+      "Download",
+      "Build",
+      "Startups",
+      "Contact us"
+    ],
+    "fonts": [
+      "Inter Variable",
+      "Berkeley Mono"
+    ],
+    "counts": {
+      "img": 11,
+      "largeImg": 1,
+      "video": 0,
+      "canvas": 0,
+      "svg": 231,
+      "sections": 8,
+      "h1": 1
+    },
+    "firstFold": "Skip to content →\nProduct\nResources\nCustomers\nPricing\nNow\nContact\nLog in\nSign up\nThe product development\nsystem for teams and agents\nThe product development system for teams and agents\n\nPurpose-built for planning and building products. Designed for the AI era.\n\nNew\nLoops →\nLinear\nPulse\nInbox\nMy issues\nReviews\nWorkspace\nInitiatives\nProjects\nMore\nFavorites\nFaster app launch\nAgent tasks\nAgent Insights\nUI Refresh\nDRV-8852\nFaster app launch\n1 / 84\nFaster app launch\n\nRender UI before vehicle_state sync when minimum required state is present, instead of blocking on full refresh during iOS startup.\n\nActivity\nLinear created the issue via Slack on behalf of Karri\n·\n2min ago\nTriage Intelligence added the labels Performance and iOS\n·\n2min ago\nkarri\n·\n4 min ago\nRight now we show a spinner forever, which makes it look like the car disappeared...\njori\n·\njust now\n@Linear can you take a stab at this?\nLin",
+    "footerTail": "Product Intake Plan AI Build Pricing Security Features Asks Agents Coding Sessions Customer Requests Insights Mobile Integrations Changelog Company About Customers Careers Now Method Quality Brand Resources Switch Download Documentation Developers Status Enterprise Startups Connect Contact us Community X (Twitter) GitHub YouTube Privacy Terms DPA AUP",
+    "imgAlts": [
+      "",
+      "Avatar of Karri",
+      "Avatar of Karri",
+      "",
+      "",
+      "Linear"
+    ],
+    "imgSrcs": [
+      "https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/c7fa8f5f-d439-4329-6a65-de549b51e300/f=auto,fit=scale-down,metadat",
+      "https://webassets.linear.app/images/ornj730p/production/f79251b06e9edeeacbf2875384defe629e000b3c-352x352.png?w=72&q=95&auto=format",
+      "https://webassets.linear.app/images/ornj730p/production/f79251b06e9edeeacbf2875384defe629e000b3c-352x352.png?w=72&q=95&auto=format",
+      "https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/f28b59f4-538c-4517-cfd7-510913015200/f=auto,fit=scale-down,metadat",
+      "https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/c2f6447a-d507-43c1-f3ab-3f2c6fbceb00/f=auto,fit=scale-down,metadat",
+      "https://linear.app/cdn-cgi/imagedelivery/fO02fVwohEs9s9UHFwon6A/4552f8d7-6f37-4319-68b4-12654bef4e00/f=auto,fit=scale-down,metadat"
+    ]
+  },
+  "vercel": {
+    "url": "https://vercel.com/",
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://vercel.com/",
+    "title": "Agentic Infrastructure - Vercel",
+    "metaDescription": "The autonomous stack for every app and agent.",
+    "themeColor": "#FAFAFA",
+    "bodyBg": "rgb(250, 250, 250)",
+    "bodyColor": "rgb(23, 23, 23)",
+    "bodyFont": "GeistSans, \"GeistSans Fallback\"",
+    "h1": "Agentic Infrastructure",
+    "h1Style": {
+      "fontFamily": "GeistSans, \"GeistSans Fallback\"",
+      "fontSize": "64px",
+      "fontWeight": "400",
+      "lineHeight": "64px",
+      "letterSpacing": "-3.84px",
+      "color": "rgb(23, 23, 23)",
+      "textTransform": "none"
+    },
+    "h2s": [
+      "Build agents on infrastructure that thinks like them",
+      "Ship apps that scale from zero to millions instantly",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "navLinks": [],
+    "ctaCandidates": [
+      "Download Brand Assets",
+      "Get a Demo",
+      "Sign Up",
+      "Talk to sales"
+    ],
+    "fonts": [
+      "GeistSans",
+      "Geist Mono"
+    ],
+    "counts": {
+      "img": 6,
+      "largeImg": 3,
+      "video": 0,
+      "canvas": 1,
+      "svg": 51,
+      "sections": 10,
+      "h1": 1
+    },
+    "firstFold": "Skip to content\nProducts\nResources\nEnterprise\nPricing\nGet a Demo\nLog In\nSign Up\nDrop to deploy\nLoading\nAgentic Infrastructure\nDeploy now\nTalk to sales\nFor coding agents to deploy in their native language, with Vercel's API, CLI, MCP, and Skills.\nTo ship apps and agents in Sandboxed VMs, with durable backends, powered by 400+ models.\nAutomated by agents who autonomously investigate errors, plan fixes, and open PRs.\nBuild agents on infrastructure that thinks like them\n\nNotion powers millions of agent conversations daily on Vercel.\n\nFeatures\nDurable Orchestration\nSandboxed Environments\nAI Model Gateway\nFluid Compute\nShip apps that scale from zero to millions instantly\n\nZapier serves over 100 million monthly website visits on Vercel.\n\nFeatures\nGlobal Delivery\nDeployment Environments\nServerless Functions\nWeb Application Firewall",
+    "footerTail": "",
+    "imgAlts": [
+      "",
+      "",
+      "Build agents on infrastructure that thinks like them",
+      "Ship apps that scale from zero to millions instantly",
+      "Vercel",
+      "Vercel"
+    ],
+    "imgSrcs": [
+      "https://vercel.com/vc-ap-vercel-marketing/_next/image?url=%2Fvc-ap-vercel-marketing%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Ffallbac",
+      "https://vercel.com/vc-ap-vercel-marketing/_next/image?url=%2Fvc-ap-vercel-marketing%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Ffallbac",
+      "https://lishhsx6kmthaacj.public.blob.vercel-storage.com/notion-desktop-light.webp",
+      "https://lishhsx6kmthaacj.public.blob.vercel-storage.com/zapier-desktop-light.webp",
+      "https://vercel.com/vc-ap-vercel-marketing/_next/static/immutable/media/vercel-light.3_gxxexgi1nmy.svg",
+      "https://vercel.com/vc-ap-vercel-marketing/_next/static/immutable/media/vercel-dark.1f3cgy23m5_jy.svg"
+    ]
+  },
+  "stripe": {
+    "url": "https://stripe.com/",
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://stripe.com/",
+    "title": "Stripe | Financial Infrastructure to Grow Your Revenue",
+    "metaDescription": "Stripe is a financial services platform that helps all types of businesses accept payments, build flexible billing models, and manage money movement.",
+    "themeColor": "",
+    "bodyBg": "rgba(0, 0, 0, 0)",
+    "bodyColor": "rgb(0, 0, 0)",
+    "bodyFont": "sohne-var, \"SF Pro Display\", sans-serif",
+    "h1": "Financial infrastructure to grow your revenue. Accept payments, handle business banking,1 and implement custom revenue models—from your first transaction to your billionth.",
+    "h1Style": {
+      "fontFamily": "sohne-var, \"SF Pro Display\", sans-serif",
+      "fontSize": "48px",
+      "fontWeight": "300",
+      "lineHeight": "55.2px",
+      "letterSpacing": "-0.96px",
+      "color": "rgb(129, 184, 26)",
+      "textTransform": "none"
+    },
+    "h2s": [
+      "Flexible solutions for every business model.",
+      "The backbone of global commerce",
+      "Powering businesses of all sizes.",
+      "Reliable, extensible infrastructure for every stack.",
+      "What’s happening"
+    ],
+    "navLinks": [
+      "Pricing",
+      "Sign in",
+      "See all productsExplore our full product",
+      "Start now",
+      "Contact sales",
+      "Sign in Sign in",
+      "Contact sales"
+    ],
+    "ctaCandidates": [
+      "Sign in",
+      "Start now",
+      "Contact sales",
+      "Sign in Sign in",
+      "Get started",
+      "Sign up with Google",
+      "Create a card issuing program",
+      "Watch now",
+      "Stripe for startups",
+      "Explore no-code"
+    ],
+    "fonts": [
+      "sohne-var"
+    ],
+    "counts": {
+      "img": 9,
+      "largeImg": 1,
+      "video": 0,
+      "canvas": 5,
+      "svg": 184,
+      "sections": 16,
+      "h1": 2
+    },
+    "firstFold": "Products\nSolutions\nDevelopers\nResources\nPricing\nSign in\nSign in\nContact sales\nGlobal GDP running on Stripe: 1.73625454%\n1.73625454%\nFinancial infrastructure to grow your revenue. Accept payments, handle business banking,1 and implement custom revenue models—from your first transaction to your billionth.\nFinancial infrastructure to grow your revenue. Accept payments, handle business banking,1 and implement custom revenue models—from your first transaction to your billionth.\nGet started\nSign up with Google\nFlexible solutions for every business model.\n\nGrow your business with a comprehensive set of payments and financial tools⁠—⁠designed to work individually or together.\n\nAccept and optimize payments globally—online and in person\nPay Roastery\nCartsy bezahlen\nShowflix に支払う\nPay Roastery\n$5.46\n€26.89\n¥5,000\n$5.46\nTap, insert, or swipe to pay\nZum Bezahlen Karte auflegen, einführen oder durchzie",
+    "footerTail": "Integrations and custom solutions Stripe App Marketplace Stripe Partner ecosystem Professional services Resources Product roadmap Guides Customer stories Blog Community Sessions annual conference Privacy and terms Prohibited and restricted businesses Licenses Sitemap Cookie settings Your privacy choices More resources Company About Careers Newsroom Stripe Press Contact sales Support Get support Managed support plans CA residents: +1 888 926 2289 Sign in United States(English) © 2026 Stripe, LLC.",
+    "imgAlts": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "imgSrcs": [
+      "https://b.stripecdn.com/mkt-ssr-statics/assets/_next/static/media/wave-fallback-desktop-1x.fba6fa88.webp",
+      "https://images.stripeassets.com/fzn2n1nzq965/1Vf8oT9Fm6dEwpnEx5PgK1/055956f38d7fd8b0cc7419692ef29778/bento-terminal.png?w=308&fm=w",
+      "https://images.stripeassets.com/fzn2n1nzq965/6BTjJGdjfGVA8brPwj7p3M/fcf084ff85142366e118fe85ee78b632/payments-electric-kettle.jpg?",
+      "https://images.stripeassets.com/fzn2n1nzq965/6BTjJGdjfGVA8brPwj7p3M/fcf084ff85142366e118fe85ee78b632/payments-electric-kettle.jpg?",
+      "https://images.stripeassets.com/fzn2n1nzq965/vYmk6v8n7oDAwbDpwhjV6/846f9b3e214549b8f14e2b8c8cfe9343/payment-bento-background.jpg?w",
+      "https://images.stripeassets.com/fzn2n1nzq965/2rL4pJabxq9Yo0haXwK2HO/83c05122b463c882c8c89111154d77ec/shirt-blue.png?w=160&fm=webp&"
+    ]
+  },
+  "ramp": {
+    "url": "https://ramp.com/",
+    "ok": false,
+    "error": "TimeoutError: Navigation timeout of 50000 ms exceeded"
+  },
+  "mercury": {
+    "url": "https://mercury.com/",
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://mercury.com/",
+    "title": "Online Business Banking For Startups, Small Businesses & Scaling Companies",
+    "metaDescription": "Everything you do with money. All in one place. Apply in 10 minutes for business banking that transforms how you operate.",
+    "themeColor": "#171721",
+    "bodyBg": "rgba(0, 0, 0, 0)",
+    "bodyColor": "rgb(0, 0, 0)",
+    "bodyFont": "arcadia, \"arcadia Fallback\"",
+    "h1": "Radically different banking",
+    "h1Style": {
+      "fontFamily": "arcadiaDisplay, \"arcadiaDisplay Fallback\"",
+      "fontSize": "49.3472px",
+      "fontWeight": "480",
+      "lineHeight": "54.2819px",
+      "letterSpacing": "normal",
+      "color": "rgb(237, 237, 243)",
+      "textTransform": "none"
+    },
+    "h2s": [
+      "Loved by 450K+ of the most ambitious entrepreneurs on the planet",
+      "You’re creating something to stand the test of time. So are we.",
+      "Mercury hits $5.2B valuation",
+      "$650M in annual revenue and profitable",
+      "Mercury lands $300M Series C",
+      "Banking – redesigned from the ground up.",
+      "Mercury for business",
+      "Mercury for personal"
+    ],
+    "navLinks": [
+      "Pricing",
+      "Dashboard",
+      "Dashboard",
+      "Log in",
+      "Log in",
+      "Open account",
+      "BooksAI-powered accounting software",
+      "PayrollPay your team, file taxes",
+      "Try the demo",
+      "Checking & Savings"
+    ],
+    "ctaCandidates": [
+      "Open account",
+      "Try the demo",
+      "Starting A Business",
+      "Startup Bundle",
+      "Help CenterOpens in new tab",
+      "Open Menu",
+      "Launch demo",
+      "Get a credit card instantly",
+      "Explore credit cards",
+      "Explore payments"
+    ],
+    "fonts": [
+      "arcadiaDisplay",
+      "arcadia"
+    ],
+    "counts": {
+      "img": 3,
+      "largeImg": 3,
+      "video": 1,
+      "canvas": 1,
+      "svg": 88,
+      "sections": 14,
+      "h1": 1
+    },
+    "firstFold": "Introducing Mercury Payroll — AI-powered, full-service payroll, built into Mercury\nProducts\nSolutions\nResources\nAbout\n\nPricing\n\nLog in\nOpen account\nRadically different banking\nApply online in 10 minutes to experience banking unlike anything that’s come before.\nEnter your email\nOpen account\nLaunch demo\n\nMercury will occasionally send you emails with offers, news, and promotions. Check this box if you do not want to receive them.\n\nOpt out\n\nMercury is a fintech company, not an FDIC-insured bank. Banking services provided through Choice Financial Group and Column N.A., Members FDIC.\n\nEverything you do with money. \nAll in one place.\n\nBusiness banking & more\nApply for free checking and savings accounts with zero minimums, earn up to 4.08% yield with Treasury by Mercury Advisory, and access loans to help you grow.\nCards & expense management\nEarn 1.5% cashback on credit card spend, and control t",
+    "footerTail": "rces Peak Season Product Releases Mercury Business Banking vs. Chase Finance Ops Payments Bill Pay Invoicing Spend Management Books Accounting Integrations Payroll SAFEs Solutions Ecommerce Agencies, Consultants & Firms SaaS VC Funds Crypto LLCs Life Science Accounting Firms Climate Real Estate & Construction Healthcare Services Account Open Account Log In iOS Android About How Mercury Works Our Story Careers Partnerships Contact Legal Privacy Policy Follow Us X LinkedIn YouTube Instagram TikTok",
+    "imgAlts": [
+      "",
+      "",
+      ""
+    ],
+    "imgSrcs": [
+      "https://mercury.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero_start_frame_xl.39vs55l6ttdit.jpg&w=3840&q=75",
+      "https://mercury.com/_next/static/media/hero_end_frame_xl.3npvt8o-inl6q.jpg",
+      "https://mercury.com/_next/static/media/hero_end_frame_xl.3npvt8o-inl6q.jpg"
+    ]
+  },
+  "resend": {
+    "url": "https://resend.com/",
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://resend.com/",
+    "title": "Resend · Email for developers",
+    "metaDescription": "The best way to reach humans instead of spam folders. Deliver transactional and marketing emails at scale.",
+    "themeColor": "#000000",
+    "bodyBg": "rgb(0, 0, 0)",
+    "bodyColor": "rgb(240, 240, 240)",
+    "bodyFont": "inter, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+    "h1": "Email for developers",
+    "h1Style": {
+      "fontFamily": "domaine, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+      "fontSize": "96px",
+      "fontWeight": "400",
+      "lineHeight": "96px",
+      "letterSpacing": "-0.96px",
+      "color": "rgb(240, 240, 240)",
+      "textTransform": "none"
+    },
+    "h2s": [
+      "Integrate this morning",
+      "First-class developer experience",
+      "Test mode",
+      "Modular webhooks",
+      "Write using a delightful editor",
+      "Go beyond editing",
+      "Contact management",
+      "Broadcast analytics"
+    ],
+    "navLinks": [
+      "Pricing",
+      "Log in",
+      "Get started"
+    ],
+    "ctaCandidates": [
+      "Open main menu",
+      "Get started",
+      "Watch Resend Forward Live",
+      "Explore Enterprise",
+      "Download ZIP",
+      "Get Started",
+      "Open source"
+    ],
+    "fonts": [
+      "domaine",
+      "aBCFavorit",
+      "Helvetica",
+      "inter",
+      "-apple-system"
+    ],
+    "counts": {
+      "img": 63,
+      "largeImg": 2,
+      "video": 5,
+      "canvas": 1,
+      "svg": 103,
+      "sections": 12,
+      "h1": 1
+    },
+    "firstFold": "Features\nCompany\nEnterprise\nHelp\nDocs\nAI\nPricing\nLog in\nGet started\nWatch Resend Forward Live\nEmail for\ndevelopers\n\nThe best way to reach humans instead of spam folders. Deliver transactional and marketing emails at scale.\n\nGet started\nDocumentation\n\nCompanies of all sizes trust Resend to deliver their most important emails.\n\nExplore Enterprise\nIntegrate this morning\n\nA simple, elegant interface so you can start sending emails in minutes. It fits right into your code with SDKs for your favorite programming languages.\n\nNode.js\nServerless\nRuby\nPython\nPHP\nCLI\nGo\nRust\nJava\nElixir\n.NET\nREST\nSMTP\nNode.js\nNext.js\nRemix\nNuxt\nExpress\nHono\nRedwood\nBun\nAstro\n1import { Resend } from 'resend';\n2\n\n3const resend = new Resend('re_xxxxxxxxx');\n4\n\n5(async function() {\n6  const { data, error } = await resend.emails.send({\n7    from: 'onboarding@resend.dev',\n8    to: 'delivered@resend.dev',\n9    subject: 'H",
+    "footerTail": "View on GitHub Download ZIP",
+    "imgAlts": [
+      "Floor background",
+      "Light ray background",
+      "Guillermo Rauch",
+      "Infisical",
+      "Vlad Matsiiako",
+      "Mintlify"
+    ],
+    "imgSrcs": [
+      "https://resend.com/_next/image?url=%2Fstatic%2Flanding-page%2Fbg-hero-1.jpg&w=1920&q=100&dpl=dpl_2XMGg9BtoB267aae47QLMPDRn4Hm",
+      "https://resend.com/_next/image?url=%2Fstatic%2Flanding-page%2Fbg-light.avif&w=1920&q=100&dpl=dpl_2XMGg9BtoB267aae47QLMPDRn4Hm",
+      "https://resend.com/static/avatars/guillermo-rauch.webp",
+      "https://cdn.resend.com/posts/logo-infisical.jpg",
+      "https://resend.com/static/avatars/vlad-matsiiako.jpg",
+      "https://cdn.resend.com/posts/logo-mintlify.jpg"
+    ]
+  },
+  "attio": {
+    "url": "https://attio.com/",
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://attio.com/",
+    "title": "Attio: The CRM for agentic revenue",
+    "metaDescription": "The system for revenue teams to build pipeline, accelerate deals, and grow accounts around the clock.\t",
+    "themeColor": "",
+    "bodyBg": "lab(99.9987 0.0337958 0.000309944)",
+    "bodyColor": "lab(10.7201 -0.0959039 -1.54182)",
+    "bodyFont": "inter, \"inter Fallback\"",
+    "h1": "Welcome to agentic revenue.",
+    "h1Style": {
+      "fontFamily": "interDisplay, \"interDisplay Fallback\"",
+      "fontSize": "79.996px",
+      "fontWeight": "600",
+      "lineHeight": "75.9962px",
+      "letterSpacing": "-2.3996px",
+      "color": "lab(10.7201 -0.0959039 -1.54182)",
+      "textTransform": "none"
+    },
+    "h2s": [
+      "The intelligent system that never sleeps. Picks up leads at 2am. Catches renewals before they slip. Hands you the answer",
+      "Live from day one. Connect your inbox and calendar. Attio learns your business and builds itself around it, before your ",
+      "Universal Context™",
+      "All of the signals, none of the noise. Ready to act on.",
+      "All of the signals, none of the noise. Ready to act on.",
+      "SDK. API. MCP. Build anything on Attio.",
+      "Run at any scale. Production-grade for your team and agents.",
+      "Trusted by 30,000+ customers. From first agent to enterprise scale."
+    ],
+    "navLinks": [
+      "The new architecture for agentic revenue",
+      "Developers",
+      "Customers",
+      "Pricing",
+      "Universal ContextThe AI context layer",
+      "Data ModelSync and structure your data",
+      "EnrichmentAuto-enrich every record",
+      "Call IntelligenceRecord and analyze meet",
+      "Reporting & ForecastsInsights in real ti",
+      "Ask AttioAnalyze and create with AI",
+      "WorkflowsOrchestrate any revenue motion"
+    ],
+    "ctaCandidates": [
+      "Startup program",
+      "Talk to sales",
+      "Sign in",
+      "Start for free",
+      "Open Attio",
+      "Send me a demo",
+      "Build pipeline",
+      "See more",
+      "Explore the ecosystem",
+      "Startups"
+    ],
+    "fonts": [
+      "interDisplay",
+      "inter"
+    ],
+    "counts": {
+      "img": 39,
+      "largeImg": 0,
+      "video": 0,
+      "canvas": 2,
+      "svg": 466,
+      "sections": 13,
+      "h1": 2
+    },
+    "firstFold": "The new architecture for agentic revenue is here\nPlatform\nResources\nDevelopers\nCustomers\nPricing\nSign in\nStart for free\nGTM lessons from Elena Verna and more\nWelcome to agentic revenue.\n\nAttio is the platform that builds pipeline, advances deals, and grows accounts around the clock.\n\nTalk to sales\nStart for free\nBasepoint\nWorkflows\nSmartflow\nA\nL\n+1\nShare\nAsk Attio\nQuick Actions\n⌘K\n/\nHome\nNotifications\nTasks\nNotes\nCalls\nReports\nAutomations\nSequences\nWorkflows\nFavorites\nLead workflows\nPipeline\nDeals\nOutreach\nLead triage\nReports\nRevenue\nRecords\nPeople\nCompanies\nEditor\nRuns\n13\nSettings\nLive\nTrigger manually\nTrigger\nRunning\nCompleted\nWhen a new deal is created\nTrigger when a new deal record is created\nWeb Agent\nEnrich the record with web research\nCustom Agent\nScore the lead and route to the right AE\nAdd to Enterprise target list\nRoute lead to Enterprise and draft outreach\nAdd to SMB target li",
+    "footerTail": "form Refer a team New Changelog Gmail extension iOS app Android app Company Customers Announcements Engineering blog New Careers Manifesto Brand Become a partner Import from Salesforce Hubspot Pipedrive Zoho Excel CSV Attio for Startups Deal flow Apps Gmail Outlook Segment Mailchimp Slack Outreach Mixmax Typeform Zapier Resources Startup program Help center Developers System status Hire an expert Downloads Trust Center © 2026 Attio Ltd. All rights reserved. Services Agreement Privacy Policy LLMs",
+    "imgAlts": [
+      "Basepoint",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "imgSrcs": [
+      "https://attio.com/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fattio-app-layout-sidebar-header-avatar.3mldc_1k2pgtd.png",
+      "https://attio.com/_next/static/immutable/media/claude.2nutjf_0spu_8.svg",
+      "https://attio.com/_next/static/immutable/media/notion.0_83efoo-4zvt.svg",
+      "https://attio.com/_next/static/immutable/media/apollo.02u38bj2f8xjm.svg",
+      "https://attio.com/_next/static/immutable/media/linear.24toa1a2d23rr.svg",
+      "https://attio.com/_next/static/immutable/media/slack.0e7mm5wjqbvbr.svg"
+    ]
+  },
+  "raycast": {
+    "url": "https://www.raycast.com/",
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://www.raycast.com/",
+    "title": "Raycast - Your shortcut to everything",
+    "metaDescription": "A collection of powerful productivity tools all within an extendable launcher.",
+    "themeColor": "",
+    "bodyBg": "rgb(7, 8, 10)",
+    "bodyColor": "rgb(255, 255, 255)",
+    "bodyFont": "Inter, \"Inter Fallback\", sans-serif",
+    "h1": "Your shortcut to everything.",
+    "h1Style": {
+      "fontFamily": "Inter, \"Inter Fallback\", sans-serif",
+      "fontSize": "64px",
+      "fontWeight": "600",
+      "lineHeight": "70.4px",
+      "letterSpacing": "normal",
+      "color": "rgb(255, 255, 255)",
+      "textTransform": "none"
+    },
+    "h2s": [
+      "Take shortcuts, not detours.",
+      "It’s not about saving time.",
+      "There’s an extension for that.",
+      "Meet your new virtual assistant",
+      "Built for professionals like you.",
+      "Don't repeat yourself.",
+      "Stay in the loop.",
+      "Take the short way."
+    ],
+    "navLinks": [
+      "Store",
+      "Pro",
+      "AI",
+      "iOS",
+      "Windows",
+      "Teams",
+      "Enterprise",
+      "Blog",
+      "Pricing",
+      "Log in",
+      "Download"
+    ],
+    "ctaCandidates": [
+      "Download",
+      "Download for Windows",
+      "Install via WinGet",
+      "Design",
+      "Create landing page for AI Agents",
+      "Create Raycast extension",
+      "Get started",
+      "Design Tools",
+      "Contact",
+      "Explore Snippets"
+    ],
+    "fonts": [
+      "Inter",
+      "GeistMono",
+      "Segoe UI Variable"
+    ],
+    "counts": {
+      "img": 54,
+      "largeImg": 1,
+      "video": 0,
+      "canvas": 1,
+      "svg": 169,
+      "sections": 0,
+      "h1": 1
+    },
+    "firstFold": "Store\nPro\nAI\niOS\nWindows\nTeams\nEnterprise\nBlog\nPricing\nLog in\nDownload\nYour shortcut to everything.\n\nA collection of powerful productivity tools all within an extendable launcher. Fast, ergonomic and reliable.\n\nDownload for Windows\n\nWindows 10+ (x64 or ARM64)\n\nInstall via WinGet\nThe Raycast Keyboard\nTake shortcuts, not detours.\n\nOne interface, everything you need.\n\nType to filter entries...\nAll Types\nToday\nImage (1200 x 1000)\n#FF6363\n#59D499\n#56C2FF\n#FFC531\nhttps://raycast.com\nhttps://github.com/raycast/extensions\nThe first Macintosh computer was introduced\nhello@raycast.com\nTwo Mangos (640 x 427)\nmagic.png (640 x 360)\nImage (842 x 420)\n#FF6363\nInformation\nApplication\tVS Code\nContent Type\tColor\nCopied\tToday, 13:35:07\nClipboard History\nCopy to Clipboard\n↵\nActions\n⌘\nK\nSearch for apps and commands...\nSearch Emoji & Symbols...\nPinned\n❤️\n👋\n👍\n🚀\n🎉\n🙏\nSmileys & People\n😀\n😃\n😄\n😁\n😆\n😅\n🤣\n😂",
+    "footerTail": "",
+    "imgAlts": [
+      "Frame Background Image",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "imgSrcs": [
+      "https://www.raycast.com/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2FfeatureBackground.3bxd817ow3sdx.png&w=1920&q=100",
+      "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Flinear-icon.png&w=64&q=70",
+      "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Flinear-web.png&w=384&q=70",
+      "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Fgoogle-translate-icon.png&w=64&q",
+      "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Fgoogle-translate-web.png&w=384&q",
+      "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Fspotify-icon.png&w=64&q=70"
+    ]
+  },
+  "framer": {
+    "url": "https://www.framer.com/",
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://www.framer.com/",
+    "title": "Framer: AI design agent",
+    "metaDescription": "Go from idea to launch with an agent that designs and builds on the canvas. Keep each change editable, with hosting, security, analytics, CMS, and SEO built in.",
+    "themeColor": "",
+    "bodyBg": "rgb(0, 0, 0)",
+    "bodyColor": "rgb(0, 0, 0)",
+    "bodyFont": "sans-serif",
+    "h1": "Framer is the design agent for every step from idea to launch",
+    "h1Style": {
+      "fontFamily": "\"GT Walsheim Medium\", \"GT Walsheim Medium Placeholder\", sans-serif",
+      "fontSize": "54px",
+      "fontWeight": "500",
+      "lineHeight": "54px",
+      "letterSpacing": "-2.16px",
+      "color": "rgb(255, 255, 255)",
+      "textTransform": "none"
+    },
+    "h2s": [
+      "Agents that work alongside you, not instead of you",
+      "Not just vibes, a full platform",
+      "Shipped with Framer",
+      "Trusted by teams shipping big sites",
+      "Built on a community that isn’t going anywhere",
+      "Your next idea starts here"
+    ],
+    "navLinks": [
+      "Get started for free",
+      "Download app",
+      "New: Skills"
+    ],
+    "ctaCandidates": [
+      "Sign up",
+      "Get started for free",
+      "Download app",
+      "Start with agents",
+      "Start with Agents",
+      "See Framer sites",
+      "Start without AI",
+      "Design",
+      "Startups",
+      "Contact"
+    ],
+    "fonts": [
+      "GT Walsheim Medium",
+      "Inter Variable",
+      "Inter",
+      "sans-serif"
+    ],
+    "counts": {
+      "img": 5,
+      "largeImg": 3,
+      "video": 4,
+      "canvas": 0,
+      "svg": 137,
+      "sections": 6,
+      "h1": 1
+    },
+    "firstFold": "Framer\n\nPlatform\n\nSolutions\n\nResources\n\nEnterprise\n\nPricing\n\nLog in\n\nSign up\n\nCopy logo SVG\n\nBrand guidelines\n\nFramer is the design agent for every step from idea to launch\n\nGet started for free\n\nDownload app\n\nNew:\n\nSkills\n\n0:36\n\nMeet our customers\n\nAgents that work alongside you, not instead of you\n\nStart with agents\n\nExploration\n\nExploration — Big Intro \n\nExploration — Side Nav \n\nDesign with an agent\n\nA professional design agent, native to the canvas. It works directly on your site to generate and refine in place, with every change visible, editable, and under your control.\n\nStart with Agents\n\nCMS\n\nSite\n\n·\n\nmain\n\nInvite\n\nPublish\n\nCollections\n\nFields\n\nPlugins\n\nAcademy\n\nBlog\n\nArticles\n\n320\n\nCreators\n\n256\n\nCategories\n\n18\n\nStyles\n\n7\n\nDevelopers\n\nStartups\n\nHelp\n\nAdd...\n\nTitle\n\nStatus\n\nImage\n\nCategory\n\nThe art of creative direction\n\nProduct\n\nDraft\n\nDesigning calmer interfaces inspired by nat",
+    "footerTail": "te Teams Founders AI website builder AI design agent Website builder Landing pages Portfolio maker UI/UX design Figma to HTML No-code Compare Webflow Figma Wix Squarespace WordPress Readymag Ceros Unbounce Lovable Claude Code ChatGPT Codex Contentful Sanity AEM Replit v0 Company Careers Security Brand Abuse Legal Trust By Framer Merch Keyboard Stack Score Free domains CanvasBench State of Sites AEO scanner Link Preview Select Language English Japanese English CCPA All services online Framer 2026",
+    "imgAlts": [
+      "Desktop website preview for the Haus design example",
+      "Website preview in the explorations section",
+      "Website sidebar preview in the explorations section",
+      "CMS table view interface preview",
+      "Social preview example"
+    ],
+    "imgSrcs": [
+      "https://framerusercontent.com/images/EX9NZExSFA4eodl7ZJOzgSOmf0.jpg?lossless=1&width=1200&height=1549",
+      "https://framerusercontent.com/images/4dSrVgS0I0XvJg2hlhEERFeaI4.jpg?lossless=1&width=1200&height=1454",
+      "https://framerusercontent.com/images/MY18WE0x641B3s93Ntxb9EyNDg.jpg?lossless=1&width=1200&height=1632",
+      "https://framerusercontent.com/images/LPkXlDTlZn3Gg3nOt0vzCxLJXU.png?width=512&height=512",
+      "https://framerusercontent.com/images/FXS1HldC2ITgGNLZTGbBDGA7h0.png?scale-down-to=512&width=1200&height=630"
+    ]
+  },
+  "luma": {
+    "url": "https://luma.com/",
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://luma.com/",
+    "title": "Luma",
+    "metaDescription": "Discover and host memorable events effortlessly with Luma. Invite friends, sell tickets, and find great events happening near you.",
+    "themeColor": "#ffffff",
+    "bodyBg": "rgba(0, 0, 0, 0)",
+    "bodyColor": "rgb(21, 21, 21)",
+    "bodyFont": "-apple-system, BlinkMacSystemFont, \"Apple Color Emoji\", Inter, Roboto, \"Segoe UI\", \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+    "h1": "Delightful events start here",
+    "h1Style": {
+      "fontFamily": "-apple-system, BlinkMacSystemFont, \"Apple Color Emoji\", Inter, Roboto, \"Segoe UI\", \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+      "fontSize": "80px",
+      "fontWeight": "500",
+      "lineHeight": "73.6px",
+      "letterSpacing": "-0.8px",
+      "color": "rgb(21, 21, 21)",
+      "textTransform": "none"
+    },
+    "h2s": [
+      "Popular Events in Seoul",
+      "Upcoming Major Events",
+      "Explore Global Communities",
+      "Browse by Category"
+    ],
+    "navLinks": [
+      "Sign In"
+    ],
+    "ctaCandidates": [
+      "Sign In",
+      "Create Your First Event",
+      "Books",
+      "Get the App"
+    ],
+    "fonts": [
+      "-apple-system"
+    ],
+    "counts": {
+      "img": 29,
+      "largeImg": 0,
+      "video": 0,
+      "canvas": 2,
+      "svg": 11,
+      "sections": 0,
+      "h1": 4
+    },
+    "firstFold": "Sign In\nDelightful\nevents\nstart here\n\nFrom run clubs to launch parties and firework shows, Luma makes every event feel effortless.\n\nStellar\nevents\nstart here\n\nFrom run clubs to launch parties and firework shows, Luma makes every event feel effortless.\n\nCreate Your First Event\nDiscover Events\nPopular Events in \nSeoul\nNitro Track Day 🏁\nToday, 1:00 PM\n수학 연구의 AI 혁신 | \"AI for Science/Engineering\" Series | 리벨리온×모두의연구소\nToday, 7:00 PM\nResearch Fast and Design Live with Mobbin MCP In Seoul\nSaturday, 12:00 PM\nDevDay Exchange Community: Suwon\nSaturday, 12:30 PM\nAX Meetup #4 - 그래서 요즘 디자이너는 무슨 일 해요? | grandeclip\nMonday, 6:30 PM\nBloom x Genspark x FuriosaAI | THE CLOSER\nTuesday, 7:00 PM\nUpcoming Major Events\nMoney20/20\n10/18 - 10/21Las Vegas\nOne Ocean Week Seattle\n10/19 - 10/25Seattle\nNew York App Week\n10/19 - 10/22New York\nMunich Climate Week\n10/19 - 10/25Munich\nExplore Global Communities\nReading Rh",
+    "footerTail": "DiscoverPricingAppHelp Terms Privacy Security DMCA",
+    "imgAlts": [
+      "Cover Image for Nitro Track Day 🏁",
+      "Cover Image for 수학 연구의 AI 혁신 | \"AI for Science/Engineering\" Series | 리벨리온×모두의연구소",
+      "Cover Image for Research Fast and Design Live with Mobbin MCP In Seoul",
+      "Cover Image for DevDay Exchange Community: Suwon",
+      "Cover Image for AX Meetup #4 - 그래서 요즘 디자이너는 무슨 일 해요? | grandeclip",
+      "Cover Image for Bloom x Genspark x FuriosaAI | THE CLOSER"
+    ],
+    "imgSrcs": [
+      "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=240,height=240/u",
+      "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=240,height=240/u",
+      "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=240,height=240/u",
+      "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=240,height=240/u",
+      "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=240,height=240/u",
+      "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=240,height=240/u"
+    ]
+  },
+  "arc": {
+    "url": "https://arc.tech/",
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://www.joinarc.com/",
+    "title": "Arc",
+    "metaDescription": "Manage cash, unlock competitive yield, raise debt capital, and access AI-powered financial services—all in one unified platform.",
+    "themeColor": "#ffffff",
+    "bodyBg": "rgba(0, 0, 0, 0)",
+    "bodyColor": "rgb(0, 0, 0)",
+    "bodyFont": "gt-america, sans-serif, -apple-system, blinkmacsystemfont, \"Apple Color Emoji\", \"Segoe UI\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+    "h1": "Intelligent cash management for technology companies",
+    "h1Style": {
+      "fontFamily": "gt-america, sans-serif, -apple-system, blinkmacsystemfont, \"Apple Color Emoji\", \"Segoe UI\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "64px",
+      "fontWeight": "300",
+      "lineHeight": "70.4px",
+      "letterSpacing": "-0.96px",
+      "color": "rgb(30, 30, 28)",
+      "textTransform": "none"
+    },
+    "h2s": [
+      "Manage your money with ease",
+      "Unlock competitive yield on idle cash",
+      "Simplify lender compliance",
+      "Put financial analysis on autopilot",
+      "Secure the right financing, faster",
+      "Get access to the cash management experience built for scale."
+    ],
+    "navLinks": [
+      "Arc homepage"
+    ],
+    "ctaCandidates": [
+      "Contact us",
+      "Get started",
+      "Book a demo"
+    ],
+    "fonts": [
+      "gt-america"
+    ],
+    "counts": {
+      "img": 10,
+      "largeImg": 5,
+      "video": 0,
+      "canvas": 0,
+      "svg": 7,
+      "sections": 8,
+      "h1": 4
+    },
+    "firstFold": "Arc is joining Axos. Learn more  →\n\nArc homepage\nProducts\nCompany\nPricing\nLog in\nGet started\nIntelligent cash management for technology companies\n\nManage cash, unlock competitive yield, raise debt capital, and access AI-powered financial services—all in one unified platform.\n\nGet started\nBook a demo\nCash Management accounts built for scale\nBusiness\nManage your money with ease\n\nSend wires and ACH, issue cards, and set controls from one secure dashboard—with dedicated support.\n\nLearn more\nTreasury\nUnlock competitive yield on idle cash\n\nAccess investments with daily liquidity, automated T-Bill laddering, and competitive yield.\n\nLearn more\nControl / DACA\nSimplify lender compliance\n\nMeet DACA requirements with a lender-controlled account offering in-app controls, automated alerts, and simple setup.\n\nLearn more\nIntelligent solutions to support your growth\nCFO Agent\nPut financial analysis on au",
+    "footerTail": " details. Arc homepage For Companies Business Account Treasury Account Control Account (DACA) Debt Raise CFO Agent For Lenders Capital Markets Company Blog About Careers Newsroom Partner benefits Contact us Resources Case studies Glossary Funding calculator Learning center Guides Pricing for companies Treasury investment options Sign up for Newsletter Email Join Newsletter © 2026 Arc Technologies Inc. All rights reserved. General Disclosures Terms of Use Privacy Policy Referral Agreement Cookies",
+    "imgAlts": [
+      "Treasury Dashboard",
+      "Screenshot of managing everyday business finances with the operating dashboard",
+      "Screenshot of yield generated with the treasury dashboard",
+      "",
+      "",
+      ""
+    ],
+    "imgSrcs": [
+      "https://storage.googleapis.com/website-cms-uploads/Home_UI_Scaled_30adf92471/Home_UI_Scaled_30adf92471.png",
+      "https://storage.googleapis.com/website-cms-uploads/operating_29e413f682/operating_29e413f682.png",
+      "https://storage.googleapis.com/website-cms-uploads/treasury_96bba9781e/treasury_96bba9781e.png",
+      "https://storage.googleapis.com/website-cms-uploads/DACA_45b2138614/DACA_45b2138614.png",
+      "https://storage.googleapis.com/website-cms-uploads/CFO_Agent_1c3c1db064/CFO_Agent_1c3c1db064.png",
+      "https://storage.googleapis.com/website-cms-uploads/debt_capital_slider_a5fbf005d9/debt_capital_slider_a5fbf005d9.png"
+    ]
+  },
+  "family": {
+    "url": "https://family.co/",
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://family.co/",
+    "title": "Family",
+    "metaDescription": "Your favorite crypto wallet.",
+    "themeColor": "#FFFFFF",
+    "bodyBg": "rgba(0, 0, 0, 0)",
+    "bodyColor": "rgb(71, 70, 69)",
+    "bodyFont": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Helvetica, \"Apple Color Emoji\", Arial, sans-serif, \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+    "h1": "Your favorite crypto wallet.",
+    "h1Style": {
+      "fontFamily": "Family, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Helvetica, \"Apple Color Emoji\", Arial, sans-serif, \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+      "fontSize": "68px",
+      "fontWeight": "500",
+      "lineHeight": "74.8px",
+      "letterSpacing": "-1.36px",
+      "color": "color(display-p3 0.203922 0.203922 0.2)",
+      "textTransform": "none"
+    },
+    "h2s": [],
+    "navLinks": [
+      "Developers",
+      "ConnectKit Connecting a wallet, made sim",
+      "Family Dedicated self-custody account.",
+      "Resources",
+      "Blog",
+      "Changelog",
+      "Help & Support",
+      "FAQs",
+      "X (Twitter)",
+      "Log In"
+    ],
+    "ctaCandidates": [
+      "Get Started",
+      "Download on iOS",
+      "Watch the Video",
+      "Watching Wallets Watch the demo",
+      "Wallet Activity Watch the demo",
+      "See More FAQs",
+      "Download for iOS",
+      "Contact"
+    ],
+    "fonts": [
+      "Family",
+      "Inter"
+    ],
+    "counts": {
+      "img": 74,
+      "largeImg": 5,
+      "video": 9,
+      "canvas": 0,
+      "svg": 94,
+      "sections": 15,
+      "h1": 13
+    },
+    "firstFold": "Developers \nConnectKit\n\nConnecting a wallet, made simple.\n\nFamily\n\nDedicated self-custody account.\n\nResources \nBlog\nChangelog\nHelp & Support\nFAQs\nX (Twitter)\nLog In\nGet Started\nYour favorite\ncrypto wallet.\n\nExplore Ethereum with the best wallet for iOS. Interacting with crypto has never been so simple.\n\nDownload on iOS\nWatch the Video\nExplore Ethereum in a whole new way.\nSend tokens or collectibles toany address or ENS username.\nSend\nSwap your tokens without everleaving your wallet.\nSwap\nReceive Ethereum based assetsthrough your unique address.\nReceive\nPurchase crypto instantlythrough your bank account.\nPurchase\nID Required\nEasy\n\nWhether you’re a beginner or seasoned pro, Family makes it easy.\n\nSecure\n\nYour crypto, your control.\nSecurity at every stage.\n\nOct 22 2026\nOct 22 2026\nFast\n\nUncompromising speed.\nOptimal performance, all the time.\n\n~\n15 Secs\nPowerful\n\nExperience the full power o",
+    "footerTail": "Developers Documentation ConnectKit GitHub Resources Audit Report Changelog Blog FAQs Press Kit Company Contact X (Twitter) Legal © 2026",
+    "imgAlts": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "imgSrcs": [
+      "https://family.co/assets/home/emoji-1.png",
+      "https://family.co/assets/home/emoji-2.png",
+      "https://family.co/assets/home/emoji-3.png",
+      "https://family.co/assets/home/emoji-4.png",
+      "https://family.co/assets/home/emoji-5.png",
+      "https://family.co/assets/home/emoji-6.png"
+    ]
+  },
+  "higgsfield": {
+    "url": "https://higgsfield.ai/",
+    "ok": true,
+    "status": 200,
+    "finalUrl": "https://higgsfield.ai/",
+    "title": "Higgsfield AI — AI-native creative suite",
+    "metaDescription": "Create images, videos, and voice content with Higgsfield AI from text prompts or references. Edit and upscale media, automate creative workflows with its AI agent, and generate content on web and mobile.",
+    "themeColor": "#030304",
+    "bodyBg": "rgb(15, 17, 19)",
+    "bodyColor": "rgb(247, 247, 248)",
+    "bodyFont": "Inter, ui-sans-serif, system-ui, sans-serif, ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+    "h1": null,
+    "h1Style": null,
+    "h2s": [
+      "The newest Kling 4.0",
+      "HIGGSFIELD GENJUTSU BY COMMUNITY",
+      "EXPLORE THE INSIDE OF EVERY PROJECT",
+      "SUPERCOMPUTER",
+      "ONE CANVAS.EVERY WORKFLOW.",
+      "ONE CANVAS. EVERY WORKFLOW.",
+      "DIFFERENT SCENES SAME STAR",
+      "EXPLORE MORE AI FEATURES"
+    ],
+    "navLinks": [],
+    "ctaCandidates": [
+      "Explore",
+      "Sign up",
+      "Open Kling 4.0",
+      "Open Higgsfield Genjutsu Lite",
+      "Open HIGGSFIELD ACADEMY",
+      "Open Higgsfield Genjutsu",
+      "Open Genjutsu API",
+      "Explore Kling 4.0",
+      "Start generating",
+      "Recreate"
+    ],
+    "fonts": [
+      "Inter",
+      "Space Grotesk"
+    ],
+    "counts": {
+      "img": 41,
+      "largeImg": 3,
+      "video": 18,
+      "canvas": 0,
+      "svg": 114,
+      "sections": 34,
+      "h1": 0
+    },
+    "firstFold": "We use cookies to run Higgsfield and understand use. You can reject analytics in Cookie Preferences. With your permission, we share device and activity data with advertising partners to measure results and support advertising. See our Cookie Notice\n\nCookie Notice\nAccept All Cookies\nReject Analytics and Advertising Cookies\nCookie Preferences\nExplore\nImage\nVideo\nAudio\nMCP\nAPI\nGenjutsu\nTop\nKatana\nNew\nAI Influencer\nAcademy\nNew\nChatGPT Plugin\nChatGPT Plugin\nAds Studio\nEffects\nCinema Studio\nContests\nContests\nMarketing Studio\nSupercomputer\nEdit\nCommunity\nPlugins\nCanvas\nOriginals\nPricing\n30% OFF\nEnterprise\nLogin\nSign up\nOpen Kling 4.0\nKLING 4.0\n\nCreate and edit videos with text, images and references\n\nOpen Higgsfield Genjutsu Lite\nHIGGSFIELD GENJUTSU LITE\n\nFaster, lighter, cheaper. Same Genjutsu energy.\n\nOpen HIGGSFIELD ACADEMY\nHIGGSFIELD ACADEMY\n\nLearn to create AI images and videos, step by st",
+    "footerTail": "psync Studio Photodump Studio Fashion Factory Higgsfield Popcorn Higgsfield Canvas Soul Soul 2.0 Soul ID Character Soul Cinema Platform Supercomputer AI Motion Designer MCP/CLI API Collab Games Reference Extension Resources Blog Creator Hub Help Center Academy Prompt Guide Company About Trust Report a vulnerability Enterprise Team Pricing Careers Contact Community Community Contests Creative Partners 535 Mission St, 14th floor, San Francisco, CA, 94105 X / Twitter Youtube LinkedIn Tiktok Discord",
+    "imgAlts": [
+      "Loading the media file...",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "imgSrcs": [
+      "https://higgsfield.ai/cdn-cgi/image/fit=scale-down,format=webp,onerror=redirect,width=640,quality=85/https://cdn.higgsfield.ai/car",
+      "https://static.higgsfield.ai/public/promotions/seedance-2-5-sale-hero-poster.jpg",
+      "https://static.higgsfield.ai/explore/image-generate-block/seedance-logo.png",
+      "https://static.higgsfield.ai/kling-4.0/explore-banner-v2/glow-magenta.svg",
+      "https://static.higgsfield.ai/kling-4.0/explore-banner-v2/glow-magenta.svg",
+      "https://static.higgsfield.ai/kling-4.0/explore-banner-v2/numeral-outline.svg"
+    ]
+  }
+}

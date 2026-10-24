@@ -1,0 +1,19 @@
+{
+  "_comment": "Template only — fill credentials via env vars. Never commit secrets.",
+  "mcpServers": {
+    "higgsfield": {
+      "url": "https://mcp.higgsfield.ai/mcp",
+      "headers": {
+        "Authorization": "Bearer ${HIGGSFIELD_API_KEY}"
+      }
+    },
+    "adobe-firefly": {
+      "command": "npx",
+      "args": ["-y", "@adobe/firefly-mcp"],
+      "env": {
+        "FIREFLY_CLIENT_ID": "${FIREFLY_CLIENT_ID}",
+        "FIREFLY_CLIENT_SECRET": "${FIREFLY_CLIENT_SECRET}"
+      }
+    }
+  }
+}

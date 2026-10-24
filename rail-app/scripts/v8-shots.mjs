@@ -1,0 +1,33 @@
+﻿import puppeteer from "puppeteer-core";
+import fs from "node:fs";
+const OUT="../screenshots/v8"; fs.mkdirSync(OUT,{recursive:true});
+const browser=await puppeteer.launch({executablePath:"C:/Program Files/Google/Chrome/Application/chrome.exe",headless:true,args:["--no-sandbox","--hide-scrollbars"]});
+const BASE="http://127.0.0.1:3100";
+async function cap(name,path,w=1440,h=1000,wait=1200,action=null){
+  const p=await browser.newPage(); await p.setViewport({width:w,height:h});
+  const errs=[]; p.on("pageerror",e=>errs.push(String(e).slice(0,120))); p.on("console",m=>{if(m.type()==="error")errs.push(m.text().slice(0,120));});
+  await p.goto(BASE+path,{waitUntil:"networkidle2",timeout:60000});
+  await new Promise(r=>setTimeout(r,1000)); if(action) await action(p); await new Promise(r=>setTimeout(r,wait));
+  await p.screenshot({path:`${OUT}/${name}.png`});
+  const m=await p.evaluate(()=>({h:document.body.scrollHeight,ov:document.documentElement.scrollWidth-innerWidth}));
+  console.log(name,JSON.stringify(m),"errors",errs.length,errs.slice(0,2).join(" | "));
+  await p.close();
+}
+await cap("home","/",1440,1100);
+await cap("home-demo","/",1440,1100,1200,async(p)=>{await p.evaluate(()=>{const el=document.querySelector("#demo"); if(el) scrollTo(0,el.getBoundingClientRect().top+scrollY-80);});});
+await cap("home-artifact","/",1440,1100,1200,async(p)=>{await p.evaluate(()=>{const el=document.querySelector("#passport"); if(el) scrollTo(0,el.getBoundingClientRect().top+scrollY-80);});});
+await cap("en-home","/en",1440,1100);
+await cap("market","/market",1440,1100);
+await cap("agents","/agents",1440,1100);
+await cap("desk","/underwrite",1440,1100);
+await cap("run","/underwrite/hanbit",1440,1100,1800,async(p)=>{await new Promise(r=>setTimeout(r,7000));});
+await cap("passport","/passport/hanbit",1440,1100);
+await cap("passport-sejong","/passport/sejong",1440,1100);
+await cap("nitro","/nitro",1440,1100);
+await cap("feedback","/feedback",1440,1100);
+await cap("log","/log",1440,1100);
+await cap("m-home","/",390,844);
+await cap("m-desk","/underwrite",390,844);
+await cap("m-passport","/passport/hanbit",390,844);
+await cap("m-nitro","/nitro",390,844);
+await browser.close();

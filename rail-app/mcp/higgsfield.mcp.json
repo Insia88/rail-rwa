@@ -1,0 +1,19 @@
+{
+  "_comment": "RAIL — optional remote MCP configs. Higgsfield requires a paid account + browser OAuth on first connect; it cannot be activated by a profile URL alone. See docs/higgsfield-prompt-pack.md.",
+  "mcpServers": {
+    "higgsfield": {
+      "type": "http",
+      "url": "https://mcp.higgsfield.ai/mcp"
+    },
+    "rail-credit": {
+      "command": "npx",
+      "args": ["tsx", "mcp/server.ts"],
+      "cwd": "."
+    },
+    "rail-art": {
+      "command": "node",
+      "args": ["mcp/art-server.mjs"],
+      "cwd": "."
+    }
+  }
+}

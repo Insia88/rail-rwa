@@ -1,0 +1,31 @@
+# RAIL Demo License
+
+Copyright (c) 2026 RAIL (the "Project"). All rights reserved.
+
+RAIL is a **demonstration product** built for evaluation and application purposes
+(e.g. Hashed Nitro Seoul 2기). This license is intentionally restrictive.
+
+## You MAY
+
+- View the deployed demo at https://rail-rwa.vercel.app and read this repository.
+- Reference public metrics, screenshots and the product concept for evaluation,
+  journalism, or research, with attribution to RAIL.
+
+## You MAY NOT
+
+- Copy, redistribute, sublicense, or commercially use the source code, design
+  system, generated art assets, or copy without written permission.
+- Deploy this project, in whole or in part, as a competing product or service.
+- Use the RAIL name, wordmark, or visual identity in any derived product.
+- Present the simulated underwriting, receivable issuance, or investment
+  records as real financial activity.
+
+## No warranty
+
+The software and data are provided "as is", without warranty of any kind.
+Nothing in this repository or demo is financial advice, an offer of securities,
+or a solicitation to invest. All financial and on-chain records shown are
+simulations unless explicitly marked live.
+
+For licensing or partnership inquiries, open an issue at
+https://github.com/Insia88/rail-rwa/issues

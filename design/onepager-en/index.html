@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>RAIL — Nitro Seoul 2 applicant one-pager (EN)</title>
+<style>
+  /* self-hosted OFL fonts — same files the product ships (rail-app/public/fonts) */
+  @font-face { font-family:"Archivo"; src:url("../../rail-app/public/fonts/archivo-var.woff2") format("woff2-variations"); font-weight:400 900; font-style:normal; font-display:block; }
+  @font-face { font-family:"Instrument Serif"; src:url("../../rail-app/public/fonts/instrument-serif-italic.woff2") format("woff2"); font-weight:400; font-style:italic; font-display:block; }
+  @font-face { font-family:"IBM Plex Mono"; src:url("../../rail-app/public/fonts/plex-mono-400.woff2") format("woff2"); font-weight:400; font-style:normal; font-display:block; }
+  @font-face { font-family:"IBM Plex Mono"; src:url("../../rail-app/public/fonts/plex-mono-500.woff2") format("woff2"); font-weight:500; font-style:normal; font-display:block; }
+  :root { --ink:#070908; --cream:#F2EDE2; --signal:#FF4B1F; --acid:#D9FF5C; --line:rgba(242,237,226,.16); --muted:rgba(242,237,226,.55); --mono:"IBM Plex Mono",monospace; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  @page { size: A4; margin: 0; }
+  html, body { width:210mm; height:297mm; }
+  body { background:var(--ink); color:var(--cream); font-family:"Archivo","Helvetica Neue",Arial,sans-serif; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  .page { width:210mm; height:297mm; padding:11mm 15mm 8mm; position:relative; overflow:hidden; background:
+    radial-gradient(300px 220px at 92% 5%, rgba(255,75,31,.22), transparent 65%),
+    radial-gradient(260px 220px at 4% 97%, rgba(217,255,92,.05), transparent 70%), var(--ink); }
+  .frame { position:absolute; inset:6.5mm; border:0.3mm solid var(--line); pointer-events:none; }
+  .top { display:flex; justify-content:space-between; align-items:flex-start; }
+  .logo { height:6.4mm; width:auto; }
+  .doc-meta { text-align:right; font-family:var(--mono); font-size:2.3mm; letter-spacing:.14em; color:var(--muted); line-height:1.85; }
+  .kicker { margin-top:5mm; font-family:var(--mono); font-size:2.5mm; letter-spacing:.26em; color:var(--muted); }
+  h1 { margin-top:2mm; font-size:15.4mm; line-height:1.03; letter-spacing:-.022em; font-weight:800; }
+  h1 em { font-style:normal; color:var(--signal); }
+  .sub { margin-top:2.2mm; font-family:"Instrument Serif",serif; font-style:italic; font-size:5.5mm; color:rgba(242,237,226,.85); }
+  .lede { margin-top:2.4mm; font-size:2.9mm; line-height:1.52; color:rgba(242,237,226,.72); max-width:176mm; }
+  .stats { display:grid; grid-template-columns:repeat(3,1fr); margin-top:4.6mm; border-top:0.3mm solid var(--line); border-bottom:0.3mm solid var(--line); }
+  .stat { padding:2.5mm 0 2.3mm; border-right:0.3mm solid var(--line); }
+  .stat:last-child { border-right:none; }
+  .stat b { display:block; font-size:9.2mm; font-weight:800; letter-spacing:-.02em; line-height:1; font-variant-numeric:tabular-nums; }
+  .stat b span { font-size:4.5mm; font-weight:700; }
+  .stat > span { display:block; margin-top:1.5mm; font-size:2.5mm; line-height:1.35; color:var(--muted); }
+  .src { margin-top:1.5mm; font-family:var(--mono); font-size:1.85mm; letter-spacing:.01em; color:rgba(242,237,226,.34); line-height:1.5; }
+  .grid { display:grid; grid-template-columns: 1fr 1fr; gap:7mm; margin-top:3mm; }
+  h2 { font-family:var(--mono); font-size:2.5mm; letter-spacing:.2em; color:var(--acid); text-transform:uppercase; }
+  .block { border-top:0.3mm solid var(--line); padding-top:1.9mm; margin-top:1.9mm; }
+  .rows { display:flex; flex-direction:column; }
+  .row { display:flex; justify-content:space-between; gap:3mm; padding:1.18mm 0; border-bottom:0.2mm solid rgba(242,237,226,.09); font-size:2.78mm; line-height:1.34; }
+  .row .k { flex:0 0 20mm; color:var(--muted); font-family:var(--mono); font-size:2.2mm; letter-spacing:.06em; }
+  .row .v { flex:1; text-align:right; }
+  .row .v b { color:var(--cream); }
+  .accent { color:var(--signal); }
+  .acid { color:var(--acid); }
+  .note { margin-top:1.6mm; font-family:var(--mono); font-size:1.95mm; line-height:1.5; color:rgba(242,237,226,.42); }
+  .plan { margin-top:3.2mm; border-top:0.3mm solid var(--line); padding-top:2.3mm; }
+  .plan-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:4mm; margin-top:2.1mm; }
+  .plan-cell { border-top:1.4px solid var(--signal); padding-top:1.6mm; }
+  .plan-cell .w { font-family:var(--mono); font-size:2.2mm; letter-spacing:.14em; color:var(--muted); }
+  .plan-cell p { margin-top:1.1mm; font-size:2.55mm; line-height:1.4; color:rgba(242,237,226,.78); }
+  .footer { position:absolute; left:15mm; right:15mm; bottom:7mm; display:flex; justify-content:space-between; align-items:flex-end; border-top:0.3mm solid var(--line); padding-top:2.2mm; }
+  .url { font-family:var(--mono); font-size:2.75mm; letter-spacing:.04em; }
+  .contact { font-family:var(--mono); font-size:2.25mm; letter-spacing:.04em; color:var(--muted); margin-top:1.3mm; }
+  .demo-note { font-size:2mm; color:rgba(242,237,226,.34); max-width:118mm; line-height:1.5; margin-top:1.4mm; }
+  .verify { margin-top:2.4mm; font-family:var(--mono); font-size:2.15mm; letter-spacing:.02em; color:rgba(242,237,226,.42); line-height:1.5; }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="frame"></div>
+  <div class="top">
+    <img class="logo" src="../../rail-app/public/brand/rail-wordmark-inverse.svg" alt="RAIL" />
+    <div class="doc-meta">NITRO SEOUL 2 · APPLICANT ONE-PAGER<br />2026.10.22 · SEOUL · EN</div>
+  </div>
+
+  <p class="kicker">RWA CREDIT RAIL · CREDIT PASSPORT · SEOUL</p>
+  <h1>Credit for the <em>cash flow</em><br />banks can’t read.</h1>
+  <p class="sub">The bank prices collateral. RAIL prices verified cash flow.</p>
+  <p class="lede">RAIL verifies export receipts, platform payouts and patents as on-chain evidence, issues a <b>Credit Passport</b> — evidence, score, limit, APR — and tokenizes approved receivables as <b>ERC-3643 RWAs</b> on Base. Four agents collect, verify, underwrite and broker; a deterministic engine computes every number.</p>
+
+  <div class="stats">
+    <div class="stat"><b>1.3<span>M</span></b><span>new businesses registered in Korea each year¹</span></div>
+    <div class="stat"><b>84.2<span>%</span></b><span>of export settlements in USD, 2025 · Bank of Korea²</span></div>
+    <div class="stat"><b>1.28<span>%</span></b><span>SME share of policy export factoring³</span></div>
+  </div>
+  <p class="src">¹ Korean business-registration data · ² Bank of Korea, Trade Settlement Currency 2025 · ³ 2022 National Assembly data (Eximbank export factoring, 2017–2021)</p>
+
+  <div class="grid">
+    <div>
+      <h2>Demo result — Hanbit Electronics, Busan</h2>
+      <div class="block rows">
+        <div class="row"><span class="k">BANK</span><span class="v">3 banks declined — collateral, age, FX mismatch</span></div>
+        <div class="row"><span class="k">VERIFIED</span><span class="v"><b class="acid">72.0%</b> coverage · 87 USDC settlements</span></div>
+        <div class="row"><span class="k">DECISION</span><span class="v"><b>Grade B · KRW 180M approved</b> · 90 days</span></div>
+        <div class="row"><span class="k">PRICE</span><span class="v"><b class="accent">8.55% APR</b> = 4.15% + 3.80pp + 0.60pp</span></div>
+        <div class="row"><span class="k">RWA</span><span class="v">RAIL-R-2026-0001 · Base · ERC-3643<br />62% funded (simulated)</span></div>
+        <div class="row"><span class="k">TWO MORE</span><span class="v">Kim Do-hyun · B+ · KRW 9M · 8.12%<br />FiberLogic · C+ · KRW 54M · 10.18%</span></div>
+      </div>
+      <h2 style="margin-top:3mm">Agent crew</h2>
+      <div class="block rows">
+        <div class="row"><span class="k">SCOUT</span><span class="v">Wallets, platforms, customs, patents</span></div>
+        <div class="row"><span class="k">VERIFIER</span><span class="v">Cross-checks self-reports vs on-chain</span></div>
+        <div class="row"><span class="k">UNDERWRITER</span><span class="v">Computes score, grade, limit, APR</span></div>
+        <div class="row"><span class="k">BROKER</span><span class="v">Issues the receivable, matches LPs</span></div>
+      </div>
+      <p class="note">Numbers are computed by a deterministic engine; LLMs never invent them.</p>
+    </div>
+    <div>
+      <h2>Evidence</h2>
+      <div class="block rows">
+        <div class="row"><span class="k">LIVE DEMO</span><span class="v"><b>rail-rwa.vercel.app</b> · Vercel</span></div>
+        <div class="row"><span class="k">GITHUB</span><span class="v"><b>github.com/Insia88/rail-rwa</b></span></div>
+        <div class="row"><span class="k">DATA</span><span class="v">DefiLlama · ECB FX · Hyperliquid</span></div>
+        <div class="row"><span class="k">MCP</span><span class="v">Credit engine + art pipeline · 2 servers</span></div>
+        <div class="row"><span class="k">DESIGN</span><span class="v">60 sites → 25 recipes → 19 applied</span></div>
+        <div class="row"><span class="k">BUILD</span><span class="v">1 human + agent crew · one day</span></div>
+        <div class="row"><span class="k">STACK</span><span class="v">Next.js 16.4 · React 19 · Base</span></div>
+      </div>
+      <h2 style="margin-top:3mm">Why now</h2>
+      <div class="block rows">
+        <div class="row"><span class="k">STO LAW</span><span class="v">Passed 2026-01-15 · expected Jan 2027</span></div>
+        <div class="row"><span class="k">STABLECOIN</span><span class="v">$305B float · USDC settlement rails</span></div>
+        <div class="row"><span class="k">RWA MARKET</span><span class="v">$76.9B CoinGecko · $25.6B private credit</span></div>
+        <div class="row"><span class="k">24/7</span><span class="v">KOSPI 200, Hyundai, SK Hynix on-chain (perps)</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="plan">
+    <h2>Nitro Seoul 2 — 8-week plan</h2>
+    <div class="plan-grid">
+      <div class="plan-cell"><p class="w">W1–2</p><p>20 customer interviews<br />Evidence schema v2</p></div>
+      <div class="plan-cell"><p class="w">W3–4</p><p>Evidence collector MVP<br />3 companies at 80% coverage</p></div>
+      <div class="plan-cell"><p class="w">W5–6</p><p>10 passports issued<br />1 factoring LOI</p></div>
+      <div class="plan-cell"><p class="w">W7–8</p><p>ERC-3643 testnet issuance<br />1 LP pilot · Game Day</p></div>
+    </div>
+    <p class="verify">Verify: clone the repo, run mcp/server.ts, call underwrite_applicant('hanbit'), compare the JSON to the passport.</p>
+  </div>
+
+  <div class="footer">
+    <div>
+      <div class="url">rail-rwa.vercel.app · github.com/Insia88/rail-rwa</div>
+      <div class="contact">Contact · github.com/Insia88/rail-rwa/issues</div>
+      <p class="demo-note">RAIL is a demo. Not a financial service. Credit decisions, receivable issuance, ERC-3643 tokens, investor records and funding percentages are simulated; applicants are constructed personas. Market data from public APIs.</p>
+    </div>
+    <div class="url" style="font-size:2.4mm; color:var(--muted); white-space:nowrap">RAIL CREDIT ENGINE · SEOUL · 2026</div>
+  </div>
+</div>
+</body>
+</html>

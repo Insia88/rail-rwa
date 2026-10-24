@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400..900&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400;500&display=swap" />
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1440px; height: 900px; overflow: hidden; background: #070908; color: #F2EDE2; font-family: "Pretendard Variable", Pretendard, "Malgun Gothic", sans-serif; }
+  .frame { position: absolute; inset: 28px; border: 1px solid rgba(242,237,226,.12); }
+  .glow { position: absolute; inset: 0; background:
+    radial-gradient(900px 520px at 82% 38%, rgba(255,75,31,.22), transparent 64%),
+    radial-gradient(600px 420px at 18% 88%, rgba(255,123,77,.08), transparent 70%),
+    linear-gradient(160deg,#070908 0%, #0A0D0B 60%, #070908 100%); }
+  .grid { position: absolute; inset: 0; opacity: .5; background-image:
+    linear-gradient(to right, rgba(242,237,226,.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(242,237,226,.05) 1px, transparent 1px);
+    background-size: 72px 72px; }
+  .inner { position: absolute; inset: 0; padding: 84px 96px; display: flex; flex-direction: column; justify-content: space-between; }
+  .brand { display: flex; align-items: center; gap: 14px; }
+  .brand svg { height: 30px; width: auto; }
+  .kicker { font-family: "IBM Plex Mono", monospace; font-size: 11px; letter-spacing: .28em; color: rgba(242,237,226,.5); }
+  h1 { font-size: 94px; font-weight: 800; line-height: 1.04; letter-spacing: -.025em; }
+  h1 em { font-style: normal; color: #FF4B1F; }
+  .sub { margin-top: 26px; font-family: "Instrument Serif", serif; font-style: italic; font-size: 40px; color: rgba(242,237,226,.82); }
+  .foot { display: flex; justify-content: space-between; align-items: flex-end; font-family: "IBM Plex Mono", monospace; font-size: 12px; letter-spacing: .18em; color: rgba(242,237,226,.45); }
+  .dot { display: inline-block; width: 8px; height: 8px; background: #FF4B1F; margin-left: 4px; }
+</style>
+</head>
+<body>
+  <div class="glow"></div><div class="grid"></div><div class="frame"></div>
+  <div class="inner">
+    <div class="brand">
+      <img src="../../public/brand/rail-wordmark-inverse.svg" alt="RAIL" style="height:30px;width:auto" />
+      <span class="kicker">CREDIT ENGINE · SEOUL</span>
+    </div>
+    <div>
+      <p class="kicker">RWA CREDIT RAIL · 2026</p>
+      <h1 style="margin-top:20px">매출은 있는데,<br />신용이 <em>없습니다</em>.</h1>
+      <p class="sub">은행은 담보를 봅니다. RAIL은 흐름을 봅니다.</p>
+    </div>
+    <div class="foot"><span>RAIL — CREDIT PASSPORT FOR CASH FLOW THE BANK CAN'T READ</span><span>rail-rwa.vercel.app<span class="dot"></span></span></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+# deps
+node_modules/
+
+# next / vercel build
+.next/
+.vercel/
+out/
+.env
+.env.local
+.env.*.local
+*.tsbuildinfo
+
+# logs
+*.log
+npm-debug.log*
+
+# local QA artifacts
+screenshots/
+rail-app/.vercel/
+rail-app/tsconfig.tsbuildinfo
+
+# private research inputs (Telegram export from a personal channel — not for publication)
+research/raw/
+research/telegram/
+
+# demo artifacts
+rail-app/demo/frames/
+rail-app/demo/checks/
+design/onepager/preview.png

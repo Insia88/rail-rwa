@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: RAIL demo
+    url: https://rail-rwa.vercel.app
+    about: 3분 데모 — 사례 → 심사 → 여권
+  - name: For Hashed · Nitro memo
+    url: https://rail-rwa.vercel.app/nitro
+    about: 김서준 대표님께 직접 묻는 3가지 + 피드백 루프
+  - name: English edition
+    url: https://rail-rwa.vercel.app/en
+    about: Global partner edition / one-pager

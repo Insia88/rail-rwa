@@ -1,0 +1,179 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8">
+<title>RAIL — Direction A</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  :root{
+    --noir:#070908; --noir-2:#0C110F; --noir-3:#131A16; --cream:#F2EDE2;
+    --signal:#FF4B1F; --acid:#D9FF5C; --line-dark:rgba(242,237,226,.14); --line-darker:rgba(242,237,226,.08);
+    --mono:"IBM Plex Mono",ui-monospace,Consolas,monospace;
+    --sans:"Pretendard Variable",Pretendard,"Malgun Gothic","Segoe UI",sans-serif;
+  }
+  html{-webkit-font-smoothing:antialiased}
+  body{width:1240px;background:var(--noir);color:var(--cream);font-family:var(--sans);overflow-x:hidden}
+  .art svg{display:block;width:100%;height:100%}
+  .art img{display:block}
+  .sect-label,.sec-lab{font-family:var(--mono);font-size:9px;letter-spacing:.24em;text-transform:uppercase;color:rgba(242,237,226,.42)}
+  .head{display:flex;justify-content:space-between;align-items:flex-start;gap:40px;
+        padding:32px 56px 28px;background:var(--noir-2);border-bottom:1px solid var(--line-dark)}
+  .head-kick{font-family:var(--mono);font-size:9px;letter-spacing:.26em;color:var(--acid);margin-bottom:13px}
+  .head-title{font-family:var(--mono);font-size:20px;font-weight:600;letter-spacing:.04em;color:var(--cream)}
+  .head-title span{color:var(--signal)}
+  .head-sub{margin-top:10px;max-width:660px;font-size:12.5px;line-height:1.72;color:rgba(242,237,226,.62);word-break:keep-all}
+  .head-specs{display:flex;flex-direction:column;gap:7px;min-width:250px;
+              font-family:var(--mono);font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:rgba(242,237,226,.45)}
+  .head-specs div{border-left:1px solid rgba(255,75,31,.6);padding-left:10px}
+
+  .hero{position:relative;overflow:hidden;padding-bottom:26px}
+  .hero-bg{position:absolute;inset:0;background:
+     linear-gradient(180deg,rgba(7,9,8,.42) 0%,rgba(7,9,8,.55) 40%,rgba(7,9,8,.88) 82%,#070908 100%),
+     url("../../../rail-app/public/art/hero-rail.webp") center 30%/cover no-repeat;}
+  .hdr{position:relative;z-index:2;border-bottom:1px solid var(--line-darker);background:rgba(7,9,8,.58);backdrop-filter:blur(18px)}
+  .hdr-in{height:64px;max-width:1152px;margin:0 auto;padding:0 32px;display:flex;align-items:center;justify-content:space-between}
+  .hdr .left{display:flex;align-items:center;gap:16px}
+  .chip{display:flex;align-items:center;gap:6px;border-left:1px solid var(--line-dark);
+        padding-left:16px;font-family:var(--mono);font-size:9px;letter-spacing:.22em;
+        text-transform:uppercase;color:rgba(242,237,226,.4)}
+  .dot{width:4px;height:4px;border-radius:50%;background:var(--acid);display:inline-block}
+  nav{display:flex;gap:28px}
+  nav a{font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;
+        color:rgba(242,237,226,.55);text-decoration:none}
+  .cta{display:inline-flex;align-items:center;justify-content:center;height:36px;padding:0 14px;
+       background:var(--signal);color:var(--cream);font-family:var(--sans);font-size:12px;
+       font-weight:500;letter-spacing:.01em;text-decoration:none}
+  .cta.lg{height:46px;padding:0 22px;font-size:13.5px}
+  .ghost{display:inline-flex;align-items:center;height:46px;padding:0 22px;border:1px solid rgba(242,237,226,.35);
+         color:var(--cream);font-size:13.5px;text-decoration:none}
+  .hero-copy{position:relative;z-index:2;max-width:1152px;margin:0 auto;padding:42px 32px 0}
+  .kicker{display:flex;align-items:center;gap:8px;font-family:var(--mono);font-size:10px;letter-spacing:.28em;color:var(--acid);text-transform:uppercase}
+  h1{margin-top:20px;font-size:54px;line-height:1.03;letter-spacing:-.045em;font-weight:800;color:var(--cream)}
+  h1 em{font-style:normal;color:var(--signal)}
+  .hero-copy p{margin-top:16px;max-width:540px;font-size:14.5px;line-height:1.78;color:rgba(242,237,226,.62);word-break:keep-all}
+  .hero-ctas{display:flex;gap:12px;margin-top:24px}
+  .hero-caption{position:absolute;right:32px;bottom:12px;z-index:3;font-family:var(--mono);font-size:8px;
+                letter-spacing:.22em;color:rgba(242,237,226,.32)}
+  .sect-label{padding:14px 56px 0}
+
+  .cream{background:var(--cream);color:var(--noir);padding:42px 56px 44px;border-top:1px solid rgba(7,9,8,.08)}
+  .cream-in{display:flex;align-items:center;gap:64px;max-width:1128px;margin:0 auto}
+  .cream-left{flex:none}
+  .cream .sec-lab{color:rgba(7,9,8,.45)}
+  .cream-right{max-width:460px}
+  .cream-note{margin-top:14px;font-size:13px;line-height:1.8;color:rgba(7,9,8,.72);word-break:keep-all}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+  .chips span{font-family:var(--mono);font-size:8.5px;letter-spacing:.16em;text-transform:uppercase;
+              border:1px solid rgba(7,9,8,.22);padding:6px 8px;color:rgba(7,9,8,.66)}
+
+  .sec{padding:32px 56px 36px;border-top:1px solid var(--line-darker)}
+  .vrow{display:flex;align-items:flex-start;gap:34px;margin-bottom:20px}
+  .vrow-lab{width:96px;flex:none;font-family:var(--mono);font-size:9px;letter-spacing:.18em;
+            color:rgba(242,237,226,.38);text-transform:uppercase;padding-top:4px}
+  .hrow{display:flex;align-items:flex-end;gap:30px}
+  .cell{display:flex;flex-direction:column;align-items:flex-start;gap:9px}
+  .cell-art{display:flex;align-items:flex-end}
+  .cell-lab{font-family:var(--mono);font-size:8px;letter-spacing:.1em;color:rgba(242,237,226,.32)}
+  .favwrap{display:flex;gap:48px;align-items:flex-start}
+  .tabcol{flex:1;max-width:660px;display:flex;flex-direction:column;gap:14px}
+  .tabs{display:flex;align-items:flex-end;height:38px;border-radius:9px 9px 0 0;border:1px solid;border-bottom:none;padding:0 8px;overflow:hidden}
+  .tab{display:flex;align-items:center;gap:8px;height:30px;padding:0 12px;border-radius:7px 7px 0 0;
+       border:1px solid;border-bottom:none;font-family:var(--sans);font-size:11px;white-space:nowrap;margin-right:4px}
+  .tab.active img{width:16px;height:16px;display:block}
+  .tab b{font-size:9px;font-weight:400;margin-left:8px}
+  .favextras{flex:none;display:flex;flex-direction:column;gap:20px}
+  .zoom{display:flex;flex-direction:column;gap:6px}
+  .zoom img{width:128px;height:128px;image-rendering:pixelated;border:1px solid var(--line-dark)}
+  .rules{padding:32px 56px 38px;border-top:1px solid var(--line-darker)}
+  .rule-row{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:18px}
+  .rule-cell{display:flex;flex-direction:column;gap:10px}
+  .rule-art{display:flex;align-items:center;justify-content:center;height:104px;padding:0 18px}
+  .rule-art.light{background:var(--cream)}
+  .rule-art.dark{background:var(--noir-2);border:1px solid var(--line-darker)}
+  .rule-lab{font-family:var(--mono);font-size:8px;letter-spacing:.16em;color:rgba(242,237,226,.4);text-transform:uppercase}
+  .rule-foot{margin-top:22px;font-family:var(--mono);font-size:8.5px;letter-spacing:.18em;
+             color:rgba(242,237,226,.35);text-transform:uppercase}
+  .foot{display:flex;justify-content:space-between;gap:20px;padding:20px 56px 26px;border-top:1px solid var(--line-dark);
+        font-family:var(--mono);font-size:8.5px;letter-spacing:.18em;color:rgba(242,237,226,.4);text-transform:uppercase}
+</style></head><body>
+
+    <section class="head">
+      <div class="head-left">
+        <div class="head-kick">RAIL — DESIGN LOGO SYSTEM · NITRO SEOUL 2026</div>
+        <div class="head-title">DIRECTION A <span>/</span> SIGNAL RAIL</div>
+        <div class="head-sub">Wordmark-first — 타입만으로 완결되는 워드마크. 600 웨이트에 타이트한 트래킹, 마지막의 오렌지 스퀘어가 ‘레일 위의 신호’입니다.</div>
+      </div>
+      <div class="head-specs"><div>Archivo 600 · wdth 110</div><div>tracking −0.018em</div><div>signal point 15u</div><div>no sublabel / no mark</div></div>
+    </section>
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <header class="hdr"><div class="hdr-in">
+        <div class="left"><div class="art " style="width:80.92px;height:22.66px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -1.5 367.83 103" fill="none" role="img" aria-label="RAIL"><title>RAIL</title><g transform="translate(0 1.5)"><path transform="translate(0 0)" d="M0.06 100V-0.06H63.35Q74.26 -0.06 81.34 3.94Q88.43 7.93 91.95 14.96Q95.48 21.98 95.48 31.11Q95.48 40.52 91.02 48.15Q86.56 55.77 77.64 59.8L98.57 100H76.18L57.81 63.41H20.29V100ZM20.29 46.53H60.03Q67.14 46.53 70.99 42.39Q74.84 38.25 74.84 31.28Q74.84 26.71 73.15 23.54Q71.46 20.38 68.16 18.72Q64.87 17.06 60.03 17.06H20.29Z" fill="#F2EDE2"/><path transform="translate(110.54 0)" d="M-0.06 100 43.35 -0.06H67.73L111.23 100H89.16L80.55 79.48H29.36L20.76 100ZM36.44 62.68H73.38L62.68 36.62Q62.04 35.1 61.01 32.49Q59.97 29.88 58.89 26.95Q57.81 24.02 56.85 21.4Q55.89 18.78 55.39 17.41H54.49Q53.44 20.32 52.03 24.11Q50.61 27.9 49.3 31.31Q47.99 34.72 47.14 36.68Z" fill="#F2EDE2"/><path transform="translate(231.77 0)" d="M0.06 100V-0.06H20.29V100Z" fill="#F2EDE2"/><path transform="translate(262.03 0)" d="M0.06 100V-0.06H20.29V82.3H75.8V100Z" fill="#F2EDE2"/><path transform="translate(352.83 0)" d="M0 85h15v15h-15Z" fill="#FF4B1F"/></g></svg></div>
+          <span class="chip"><i class="dot"></i>SEOUL · 2026</span>
+        </div>
+        <nav><a>문제</a><a>작동 방식</a><a>신용 여권</a><a>시장</a><a>에이전트</a></nav>
+        <a class="cta">신용 여권 만들기</a>
+      </div></header>
+      <div class="hero-copy">
+        <div class="kicker"><i class="dot"></i>RWA CREDIT RAIL · SEOUL 2026</div>
+        <h1>매출은 있는데,<br>신용이 <em>없습니다.</em></h1>
+        <p>RAIL은 수출대금·정산 이력·매출채권을 온체인 증거로 검증해, 담보 없는 기업의 신용 여권을 만듭니다.</p>
+        <div class="hero-ctas"><a class="cta lg">한빛전자 3분 심사</a><a class="ghost">RWA 시장 보기</a></div>
+      </div>
+      <div class="hero-caption">REAL HEADER CONTEXT · HEADER 64PX · WORDMARK CAP 22PX</div>
+    </section>
+    <div class="sect-label">A — REAL DARK HEADER CONTEXT</div>
+    <section class="cream">
+      <div class="cream-in">
+        <div class="cream-left"><div class="art big" style="width:308.98px;height:86.52px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -1.5 367.83 103" fill="none" role="img" aria-label="RAIL"><title>RAIL</title><g transform="translate(0 1.5)"><path transform="translate(0 0)" d="M0.06 100V-0.06H63.35Q74.26 -0.06 81.34 3.94Q88.43 7.93 91.95 14.96Q95.48 21.98 95.48 31.11Q95.48 40.52 91.02 48.15Q86.56 55.77 77.64 59.8L98.57 100H76.18L57.81 63.41H20.29V100ZM20.29 46.53H60.03Q67.14 46.53 70.99 42.39Q74.84 38.25 74.84 31.28Q74.84 26.71 73.15 23.54Q71.46 20.38 68.16 18.72Q64.87 17.06 60.03 17.06H20.29Z" fill="#070908"/><path transform="translate(110.54 0)" d="M-0.06 100 43.35 -0.06H67.73L111.23 100H89.16L80.55 79.48H29.36L20.76 100ZM36.44 62.68H73.38L62.68 36.62Q62.04 35.1 61.01 32.49Q59.97 29.88 58.89 26.95Q57.81 24.02 56.85 21.4Q55.89 18.78 55.39 17.41H54.49Q53.44 20.32 52.03 24.11Q50.61 27.9 49.3 31.31Q47.99 34.72 47.14 36.68Z" fill="#070908"/><path transform="translate(231.77 0)" d="M0.06 100V-0.06H20.29V100Z" fill="#070908"/><path transform="translate(262.03 0)" d="M0.06 100V-0.06H20.29V82.3H75.8V100Z" fill="#070908"/><path transform="translate(352.83 0)" d="M0 85h15v15h-15Z" fill="#FF4B1F"/></g></svg></div></div>
+        <div class="cream-right">
+          <div class="sec-lab">B — CREAM SURFACE / INK + SIGNAL</div>
+          <div class="cream-note">크림 밴드에서는 잉크 버전. 오렌지는 단 한 곳, 시그널 포인트에만.</div>
+          <div class="chips">
+            <span>MIN 16PX CAP</span><span>CLEARSPACE 1C</span><span>NO GRADIENT</span><span>NO SUBLABEL</span>
+          </div>
+        </div>
+      </div>
+    </section><section class="sec shrink-sec"><div class="sec-lab">C — 16 / 24 / 32 / 48 PX SHRINK GRID · DARK</div><div class="vrow"><div class="vrow-lab">LOCKUP</div><div class="hrow"><div class="cell"><div class="cell-art" style="height:49px"><div class="art-b" style="width:176.56px;height:49.44px"><div class="art " style="width:176.56px;height:49.44px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -1.5 367.83 103" fill="none" role="img" aria-label="RAIL"><title>RAIL</title><g transform="translate(0 1.5)"><path transform="translate(0 0)" d="M0.06 100V-0.06H63.35Q74.26 -0.06 81.34 3.94Q88.43 7.93 91.95 14.96Q95.48 21.98 95.48 31.11Q95.48 40.52 91.02 48.15Q86.56 55.77 77.64 59.8L98.57 100H76.18L57.81 63.41H20.29V100ZM20.29 46.53H60.03Q67.14 46.53 70.99 42.39Q74.84 38.25 74.84 31.28Q74.84 26.71 73.15 23.54Q71.46 20.38 68.16 18.72Q64.87 17.06 60.03 17.06H20.29Z" fill="#F2EDE2"/><path transform="translate(110.54 0)" d="M-0.06 100 43.35 -0.06H67.73L111.23 100H89.16L80.55 79.48H29.36L20.76 100ZM36.44 62.68H73.38L62.68 36.62Q62.04 35.1 61.01 32.49Q59.97 29.88 58.89 26.95Q57.81 24.02 56.85 21.4Q55.89 18.78 55.39 17.41H54.49Q53.44 20.32 52.03 24.11Q50.61 27.9 49.3 31.31Q47.99 34.72 47.14 36.68Z" fill="#F2EDE2"/><path transform="translate(231.77 0)" d="M0.06 100V-0.06H20.29V100Z" fill="#F2EDE2"/><path transform="translate(262.03 0)" d="M0.06 100V-0.06H20.29V82.3H75.8V100Z" fill="#F2EDE2"/><path transform="translate(352.83 0)" d="M0 85h15v15h-15Z" fill="#FF4B1F"/></g></svg></div></div></div><div class="cell-lab">48</div></div><div class="cell"><div class="cell-art" style="height:33px"><div class="art-b" style="width:117.71px;height:32.96px"><div class="art " style="width:117.71px;height:32.96px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -1.5 367.83 103" fill="none" role="img" aria-label="RAIL"><title>RAIL</title><g transform="translate(0 1.5)"><path transform="translate(0 0)" d="M0.06 100V-0.06H63.35Q74.26 -0.06 81.34 3.94Q88.43 7.93 91.95 14.96Q95.48 21.98 95.48 31.11Q95.48 40.52 91.02 48.15Q86.56 55.77 77.64 59.8L98.57 100H76.18L57.81 63.41H20.29V100ZM20.29 46.53H60.03Q67.14 46.53 70.99 42.39Q74.84 38.25 74.84 31.28Q74.84 26.71 73.15 23.54Q71.46 20.38 68.16 18.72Q64.87 17.06 60.03 17.06H20.29Z" fill="#F2EDE2"/><path transform="translate(110.54 0)" d="M-0.06 100 43.35 -0.06H67.73L111.23 100H89.16L80.55 79.48H29.36L20.76 100ZM36.44 62.68H73.38L62.68 36.62Q62.04 35.1 61.01 32.49Q59.97 29.88 58.89 26.95Q57.81 24.02 56.85 21.4Q55.89 18.78 55.39 17.41H54.49Q53.44 20.32 52.03 24.11Q50.61 27.9 49.3 31.31Q47.99 34.72 47.14 36.68Z" fill="#F2EDE2"/><path transform="translate(231.77 0)" d="M0.06 100V-0.06H20.29V100Z" fill="#F2EDE2"/><path transform="translate(262.03 0)" d="M0.06 100V-0.06H20.29V82.3H75.8V100Z" fill="#F2EDE2"/><path transform="translate(352.83 0)" d="M0 85h15v15h-15Z" fill="#FF4B1F"/></g></svg></div></div></div><div class="cell-lab">32</div></div><div class="cell"><div class="cell-art" style="height:25px"><div class="art-b" style="width:88.28px;height:24.72px"><div class="art " style="width:88.28px;height:24.72px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -1.5 367.83 103" fill="none" role="img" aria-label="RAIL"><title>RAIL</title><g transform="translate(0 1.5)"><path transform="translate(0 0)" d="M0.06 100V-0.06H63.35Q74.26 -0.06 81.34 3.94Q88.43 7.93 91.95 14.96Q95.48 21.98 95.48 31.11Q95.48 40.52 91.02 48.15Q86.56 55.77 77.64 59.8L98.57 100H76.18L57.81 63.41H20.29V100ZM20.29 46.53H60.03Q67.14 46.53 70.99 42.39Q74.84 38.25 74.84 31.28Q74.84 26.71 73.15 23.54Q71.46 20.38 68.16 18.72Q64.87 17.06 60.03 17.06H20.29Z" fill="#F2EDE2"/><path transform="translate(110.54 0)" d="M-0.06 100 43.35 -0.06H67.73L111.23 100H89.16L80.55 79.48H29.36L20.76 100ZM36.44 62.68H73.38L62.68 36.62Q62.04 35.1 61.01 32.49Q59.97 29.88 58.89 26.95Q57.81 24.02 56.85 21.4Q55.89 18.78 55.39 17.41H54.49Q53.44 20.32 52.03 24.11Q50.61 27.9 49.3 31.31Q47.99 34.72 47.14 36.68Z" fill="#F2EDE2"/><path transform="translate(231.77 0)" d="M0.06 100V-0.06H20.29V100Z" fill="#F2EDE2"/><path transform="translate(262.03 0)" d="M0.06 100V-0.06H20.29V82.3H75.8V100Z" fill="#F2EDE2"/><path transform="translate(352.83 0)" d="M0 85h15v15h-15Z" fill="#FF4B1F"/></g></svg></div></div></div><div class="cell-lab">24</div></div><div class="cell"><div class="cell-art" style="height:22px"><div class="art-b" style="width:58.85px;height:16.48px"><div class="art " style="width:58.85px;height:16.48px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -1.5 367.83 103" fill="none" role="img" aria-label="RAIL"><title>RAIL</title><g transform="translate(0 1.5)"><path transform="translate(0 0)" d="M0.06 100V-0.06H63.35Q74.26 -0.06 81.34 3.94Q88.43 7.93 91.95 14.96Q95.48 21.98 95.48 31.11Q95.48 40.52 91.02 48.15Q86.56 55.77 77.64 59.8L98.57 100H76.18L57.81 63.41H20.29V100ZM20.29 46.53H60.03Q67.14 46.53 70.99 42.39Q74.84 38.25 74.84 31.28Q74.84 26.71 73.15 23.54Q71.46 20.38 68.16 18.72Q64.87 17.06 60.03 17.06H20.29Z" fill="#F2EDE2"/><path transform="translate(110.54 0)" d="M-0.06 100 43.35 -0.06H67.73L111.23 100H89.16L80.55 79.48H29.36L20.76 100ZM36.44 62.68H73.38L62.68 36.62Q62.04 35.1 61.01 32.49Q59.97 29.88 58.89 26.95Q57.81 24.02 56.85 21.4Q55.89 18.78 55.39 17.41H54.49Q53.44 20.32 52.03 24.11Q50.61 27.9 49.3 31.31Q47.99 34.72 47.14 36.68Z" fill="#F2EDE2"/><path transform="translate(231.77 0)" d="M0.06 100V-0.06H20.29V100Z" fill="#F2EDE2"/><path transform="translate(262.03 0)" d="M0.06 100V-0.06H20.29V82.3H75.8V100Z" fill="#F2EDE2"/><path transform="translate(352.83 0)" d="M0 85h15v15h-15Z" fill="#FF4B1F"/></g></svg></div></div></div><div class="cell-lab">16</div></div></div></div><div class="vrow"><div class="vrow-lab">WORDMARK</div><div class="hrow"><div class="cell"><div class="cell-art" style="height:49px"><div class="art-b" style="width:162.16px;height:49.44px"><div class="art " style="width:162.16px;height:49.44px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -1.5 337.83 103" fill="none" role="img" aria-label="RAIL"><title>RAIL</title><g transform="translate(0 1.5)"><path transform="translate(0 0)" d="M0.06 100V-0.06H63.35Q74.26 -0.06 81.34 3.94Q88.43 7.93 91.95 14.96Q95.48 21.98 95.48 31.11Q95.48 40.52 91.02 48.15Q86.56 55.77 77.64 59.8L98.57 100H76.18L57.81 63.41H20.29V100ZM20.29 46.53H60.03Q67.14 46.53 70.99 42.39Q74.84 38.25 74.84 31.28Q74.84 26.71 73.15 23.54Q71.46 20.38 68.16 18.72Q64.87 17.06 60.03 17.06H20.29Z" fill="#F2EDE2"/><path transform="translate(110.54 0)" d="M-0.06 100 43.35 -0.06H67.73L111.23 100H89.16L80.55 79.48H29.36L20.76 100ZM36.44 62.68H73.38L62.68 36.62Q62.04 35.1 61.01 32.49Q59.97 29.88 58.89 26.95Q57.81 24.02 56.85 21.4Q55.89 18.78 55.39 17.41H54.49Q53.44 20.32 52.03 24.11Q50.61 27.9 49.3 31.31Q47.99 34.72 47.14 36.68Z" fill="#F2EDE2"/><path transform="translate(231.77 0)" d="M0.06 100V-0.06H20.29V100Z" fill="#F2EDE2"/><path transform="translate(262.03 0)" d="M0.06 100V-0.06H20.29V82.3H75.8V100Z" fill="#F2EDE2"/></g></svg></div></div></div><div class="cell-lab">48</div></div><div class="cell"><div class="cell-art" style="height:33px"><div class="art-b" style="width:108.11px;height:32.96px"><div class="art " style="width:108.11px;height:32.96px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -1.5 337.83 103" fill="none" role="img" aria-label="RAIL"><title>RAIL</title><g transform="translate(0 1.5)"><path transform="translate(0 0)" d="M0.06 100V-0.06H63.35Q74.26 -0.06 81.34 3.94Q88.43 7.93 91.95 14.96Q95.48 21.98 95.48 31.11Q95.48 40.52 91.02 48.15Q86.56 55.77 77.64 59.8L98.57 100H76.18L57.81 63.41H20.29V100ZM20.29 46.53H60.03Q67.14 46.53 70.99 42.39Q74.84 38.25 74.84 31.28Q74.84 26.71 73.15 23.54Q71.46 20.38 68.16 18.72Q64.87 17.06 60.03 17.06H20.29Z" fill="#F2EDE2"/><path transform="translate(110.54 0)" d="M-0.06 100 43.35 -0.06H67.73L111.23 100H89.16L80.55 79.48H29.36L20.76 100ZM36.44 62.68H73.38L62.68 36.62Q62.04 35.1 61.01 32.49Q59.97 29.88 58.89 26.95Q57.81 24.02 56.85 21.4Q55.89 18.78 55.39 17.41H54.49Q53.44 20.32 52.03 24.11Q50.61 27.9 49.3 31.31Q47.99 34.72 47.14 36.68Z" fill="#F2EDE2"/><path transform="translate(231.77 0)" d="M0.06 100V-0.06H20.29V100Z" fill="#F2EDE2"/><path transform="translate(262.03 0)" d="M0.06 100V-0.06H20.29V82.3H75.8V100Z" fill="#F2EDE2"/></g></svg></div></div></div><div class="cell-lab">32</div></div><div class="cell"><div class="cell-art" style="height:25px"><div class="art-b" style="width:81.08px;height:24.72px"><div class="art " style="width:81.08px;height:24.72px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -1.5 337.83 103" fill="none" role="img" aria-label="RAIL"><title>RAIL</title><g transform="translate(0 1.5)"><path transform="translate(0 0)" d="M0.06 100V-0.06H63.35Q74.26 -0.06 81.34 3.94Q88.43 7.93 91.95 14.96Q95.48 21.98 95.48 31.11Q95.48 40.52 91.02 48.15Q86.56 55.77 77.64 59.8L98.57 100H76.18L57.81 63.41H20.29V100ZM20.29 46.53H60.03Q67.14 46.53 70.99 42.39Q74.84 38.25 74.84 31.28Q74.84 26.71 73.15 23.54Q71.46 20.38 68.16 18.72Q64.87 17.06 60.03 17.06H20.29Z" fill="#F2EDE2"/><path transform="translate(110.54 0)" d="M-0.06 100 43.35 -0.06H67.73L111.23 100H89.16L80.55 79.48H29.36L20.76 100ZM36.44 62.68H73.38L62.68 36.62Q62.04 35.1 61.01 32.49Q59.97 29.88 58.89 26.95Q57.81 24.02 56.85 21.4Q55.89 18.78 55.39 17.41H54.49Q53.44 20.32 52.03 24.11Q50.61 27.9 49.3 31.31Q47.99 34.72 47.14 36.68Z" fill="#F2EDE2"/><path transform="translate(231.77 0)" d="M0.06 100V-0.06H20.29V100Z" fill="#F2EDE2"/><path transform="translate(262.03 0)" d="M0.06 100V-0.06H20.29V82.3H75.8V100Z" fill="#F2EDE2"/></g></svg></div></div></div><div class="cell-lab">24</div></div><div class="cell"><div class="cell-art" style="height:22px"><div class="art-b" style="width:54.05px;height:16.48px"><div class="art " style="width:54.05px;height:16.48px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -1.5 337.83 103" fill="none" role="img" aria-label="RAIL"><title>RAIL</title><g transform="translate(0 1.5)"><path transform="translate(0 0)" d="M0.06 100V-0.06H63.35Q74.26 -0.06 81.34 3.94Q88.43 7.93 91.95 14.96Q95.48 21.98 95.48 31.11Q95.48 40.52 91.02 48.15Q86.56 55.77 77.64 59.8L98.57 100H76.18L57.81 63.41H20.29V100ZM20.29 46.53H60.03Q67.14 46.53 70.99 42.39Q74.84 38.25 74.84 31.28Q74.84 26.71 73.15 23.54Q71.46 20.38 68.16 18.72Q64.87 17.06 60.03 17.06H20.29Z" fill="#F2EDE2"/><path transform="translate(110.54 0)" d="M-0.06 100 43.35 -0.06H67.73L111.23 100H89.16L80.55 79.48H29.36L20.76 100ZM36.44 62.68H73.38L62.68 36.62Q62.04 35.1 61.01 32.49Q59.97 29.88 58.89 26.95Q57.81 24.02 56.85 21.4Q55.89 18.78 55.39 17.41H54.49Q53.44 20.32 52.03 24.11Q50.61 27.9 49.3 31.31Q47.99 34.72 47.14 36.68Z" fill="#F2EDE2"/><path transform="translate(231.77 0)" d="M0.06 100V-0.06H20.29V100Z" fill="#F2EDE2"/><path transform="translate(262.03 0)" d="M0.06 100V-0.06H20.29V82.3H75.8V100Z" fill="#F2EDE2"/></g></svg></div></div></div><div class="cell-lab">16</div></div></div></div><div class="vrow"><div class="vrow-lab">MARK</div><div class="hrow"><div class="cell"><div class="cell-art" style="height:49px"><div class="art-b" style="width:59.78px;height:49.44px"><div class="art " style="width:59.78px;height:49.44px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -1.5 124.54 103" fill="none" role="img" aria-label="RAIL"><title>RAIL</title><g transform="translate(0 1.5)"><path transform="translate(0 0)" d="M0.06 100V-0.06H63.35Q74.26 -0.06 81.34 3.94Q88.43 7.93 91.95 14.96Q95.48 21.98 95.48 31.11Q95.48 40.52 91.02 48.15Q86.56 55.77 77.64 59.8L98.57 100H76.18L57.81 63.41H20.29V100ZM20.29 46.53H60.03Q67.14 46.53 70.99 42.39Q74.84 38.25 74.84 31.28Q74.84 26.71 73.15 23.54Q71.46 20.38 68.16 18.72Q64.87 17.06 60.03 17.06H20.29Z" fill="#F2EDE2"/><path transform="translate(107.54 0)" d="M0 83h17v17h-17Z" fill="#FF4B1F"/></g></svg></div></div></div><div class="cell-lab">48</div></div><div class="cell"><div class="cell-art" style="height:33px"><div class="art-b" style="width:39.85px;height:32.96px"><div class="art " style="width:39.85px;height:32.96px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -1.5 124.54 103" fill="none" role="img" aria-label="RAIL"><title>RAIL</title><g transform="translate(0 1.5)"><path transform="translate(0 0)" d="M0.06 100V-0.06H63.35Q74.26 -0.06 81.34 3.94Q88.43 7.93 91.95 14.96Q95.48 21.98 95.48 31.11Q95.48 40.52 91.02 48.15Q86.56 55.77 77.64 59.8L98.57 100H76.18L57.81 63.41H20.29V100ZM20.29 46.53H60.03Q67.14 46.53 70.99 42.39Q74.84 38.25 74.84 31.28Q74.84 26.71 73.15 23.54Q71.46 20.38 68.16 18.72Q64.87 17.06 60.03 17.06H20.29Z" fill="#F2EDE2"/><path transform="translate(107.54 0)" d="M0 83h17v17h-17Z" fill="#FF4B1F"/></g></svg></div></div></div><div class="cell-lab">32</div></div><div class="cell"><div class="cell-art" style="height:25px"><div class="art-b" style="width:29.89px;height:24.72px"><div class="art " style="width:29.89px;height:24.72px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -1.5 124.54 103" fill="none" role="img" aria-label="RAIL"><title>RAIL</title><g transform="translate(0 1.5)"><path transform="translate(0 0)" d="M0.06 100V-0.06H63.35Q74.26 -0.06 81.34 3.94Q88.43 7.93 91.95 14.96Q95.48 21.98 95.48 31.11Q95.48 40.52 91.02 48.15Q86.56 55.77 77.64 59.8L98.57 100H76.18L57.81 63.41H20.29V100ZM20.29 46.53H60.03Q67.14 46.53 70.99 42.39Q74.84 38.25 74.84 31.28Q74.84 26.71 73.15 23.54Q71.46 20.38 68.16 18.72Q64.87 17.06 60.03 17.06H20.29Z" fill="#F2EDE2"/><path transform="translate(107.54 0)" d="M0 83h17v17h-17Z" fill="#FF4B1F"/></g></svg></div></div></div><div class="cell-lab">24</div></div><div class="cell"><div class="cell-art" style="height:22px"><div class="art-b" style="width:19.93px;height:16.48px"><div class="art " style="width:19.93px;height:16.48px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -1.5 124.54 103" fill="none" role="img" aria-label="RAIL"><title>RAIL</title><g transform="translate(0 1.5)"><path transform="translate(0 0)" d="M0.06 100V-0.06H63.35Q74.26 -0.06 81.34 3.94Q88.43 7.93 91.95 14.96Q95.48 21.98 95.48 31.11Q95.48 40.52 91.02 48.15Q86.56 55.77 77.64 59.8L98.57 100H76.18L57.81 63.41H20.29V100ZM20.29 46.53H60.03Q67.14 46.53 70.99 42.39Q74.84 38.25 74.84 31.28Q74.84 26.71 73.15 23.54Q71.46 20.38 68.16 18.72Q64.87 17.06 60.03 17.06H20.29Z" fill="#F2EDE2"/><path transform="translate(107.54 0)" d="M0 83h17v17h-17Z" fill="#FF4B1F"/></g></svg></div></div></div><div class="cell-lab">16</div></div></div></div></section><section class="sec fav-sec"><div class="sec-lab">D — FAVICON / TAB / DOCK</div>
+    <div class="favwrap">
+      <div class="tabcol">
+    <div class="tabs" style="background:#070908;border-color:rgba(242,237,226,.1)">
+      <div class="tab active" style="background:#131A16;border-color:rgba(242,237,226,.1)">
+        <img src="favicon-a-32.png" width="16" height="16" alt="">
+        <span style="color:#F2EDE2">RAIL — RWA Credit Rail</span>
+        <b style="color:rgba(242,237,226,.42)">&#10005;</b>
+      </div>
+      <div class="tab" style="border-color:rgba(242,237,226,.1)"><span style="color:rgba(242,237,226,.42)">Market · RAIL</span></div>
+      <div class="tab" style="border-color:rgba(242,237,226,.1)"><span style="color:rgba(242,237,226,.42)">여권 · RAIL</span></div>
+    </div>
+    <div class="tabs" style="background:#D8D2C4;border-color:rgba(7,9,8,.12)">
+      <div class="tab active" style="background:#F2EDE2;border-color:rgba(7,9,8,.12)">
+        <img src="favicon-a-32.png" width="16" height="16" alt="">
+        <span style="color:#070908">RAIL — RWA Credit Rail</span>
+        <b style="color:rgba(7,9,8,.45)">&#10005;</b>
+      </div>
+      <div class="tab" style="border-color:rgba(7,9,8,.12)"><span style="color:rgba(7,9,8,.45)">Market · RAIL</span></div>
+      <div class="tab" style="border-color:rgba(7,9,8,.12)"><span style="color:rgba(7,9,8,.45)">여권 · RAIL</span></div>
+    </div></div>
+      <div class="favextras">
+        <div class="hrow"><div class="cell"><div class="cell-art" style="height:16px"><div class="art" style="width:16px;height:16px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32"><title>RAIL</title><rect width="32" height="32" rx="7" fill="#070908"/><path transform="translate(4 6.36) scale(0.19) translate(0 0)" d="M0.06 100V-0.06H63.35Q74.26 -0.06 81.34 3.94Q88.43 7.93 91.95 14.96Q95.48 21.98 95.48 31.11Q95.48 40.52 91.02 48.15Q86.56 55.77 77.64 59.8L98.57 100H76.18L57.81 63.41H20.29V100ZM20.29 46.53H60.03Q67.14 46.53 70.99 42.39Q74.84 38.25 74.84 31.28Q74.84 26.71 73.15 23.54Q71.46 20.38 68.16 18.72Q64.87 17.06 60.03 17.06H20.29Z" fill="#F2EDE2"/><path transform="translate(4 6.36) scale(0.19) translate(107.54 0)" d="M0 83h17v17h-17Z" fill="#FF4B1F"/></svg></div></div><div class="cell-lab">16</div></div><div class="cell"><div class="cell-art" style="height:32px"><div class="art" style="width:32px;height:32px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32"><title>RAIL</title><rect width="32" height="32" rx="7" fill="#070908"/><path transform="translate(4 6.36) scale(0.19) translate(0 0)" d="M0.06 100V-0.06H63.35Q74.26 -0.06 81.34 3.94Q88.43 7.93 91.95 14.96Q95.48 21.98 95.48 31.11Q95.48 40.52 91.02 48.15Q86.56 55.77 77.64 59.8L98.57 100H76.18L57.81 63.41H20.29V100ZM20.29 46.53H60.03Q67.14 46.53 70.99 42.39Q74.84 38.25 74.84 31.28Q74.84 26.71 73.15 23.54Q71.46 20.38 68.16 18.72Q64.87 17.06 60.03 17.06H20.29Z" fill="#F2EDE2"/><path transform="translate(4 6.36) scale(0.19) translate(107.54 0)" d="M0 83h17v17h-17Z" fill="#FF4B1F"/></svg></div></div><div class="cell-lab">32</div></div><div class="cell"><div class="cell-art" style="height:48px"><div class="art" style="width:48px;height:48px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32"><title>RAIL</title><rect width="32" height="32" rx="7" fill="#070908"/><path transform="translate(4 6.36) scale(0.19) translate(0 0)" d="M0.06 100V-0.06H63.35Q74.26 -0.06 81.34 3.94Q88.43 7.93 91.95 14.96Q95.48 21.98 95.48 31.11Q95.48 40.52 91.02 48.15Q86.56 55.77 77.64 59.8L98.57 100H76.18L57.81 63.41H20.29V100ZM20.29 46.53H60.03Q67.14 46.53 70.99 42.39Q74.84 38.25 74.84 31.28Q74.84 26.71 73.15 23.54Q71.46 20.38 68.16 18.72Q64.87 17.06 60.03 17.06H20.29Z" fill="#F2EDE2"/><path transform="translate(4 6.36) scale(0.19) translate(107.54 0)" d="M0 83h17v17h-17Z" fill="#FF4B1F"/></svg></div></div><div class="cell-lab">48</div></div></div>
+        <div class="zoom"><img src="favicon-a-32.png" alt=""><div class="cell-lab">32px @4× (pixel view)</div></div>
+      </div>
+    </div></section>
+    <section class="rules">
+      <div class="sec-lab">E — TREATMENTS</div>
+      <div class="rule-row">
+        <div class="rule-cell"><div class="rule-art light"><div class="art " style="width:139.78px;height:39.14px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -1.5 367.83 103" fill="none" role="img" aria-label="RAIL"><title>RAIL</title><g transform="translate(0 1.5)"><path transform="translate(0 0)" d="M0.06 100V-0.06H63.35Q74.26 -0.06 81.34 3.94Q88.43 7.93 91.95 14.96Q95.48 21.98 95.48 31.11Q95.48 40.52 91.02 48.15Q86.56 55.77 77.64 59.8L98.57 100H76.18L57.81 63.41H20.29V100ZM20.29 46.53H60.03Q67.14 46.53 70.99 42.39Q74.84 38.25 74.84 31.28Q74.84 26.71 73.15 23.54Q71.46 20.38 68.16 18.72Q64.87 17.06 60.03 17.06H20.29Z" fill="#070908"/><path transform="translate(110.54 0)" d="M-0.06 100 43.35 -0.06H67.73L111.23 100H89.16L80.55 79.48H29.36L20.76 100ZM36.44 62.68H73.38L62.68 36.62Q62.04 35.1 61.01 32.49Q59.97 29.88 58.89 26.95Q57.81 24.02 56.85 21.4Q55.89 18.78 55.39 17.41H54.49Q53.44 20.32 52.03 24.11Q50.61 27.9 49.3 31.31Q47.99 34.72 47.14 36.68Z" fill="#070908"/><path transform="translate(231.77 0)" d="M0.06 100V-0.06H20.29V100Z" fill="#070908"/><path transform="translate(262.03 0)" d="M0.06 100V-0.06H20.29V82.3H75.8V100Z" fill="#070908"/><path transform="translate(352.83 0)" d="M0 85h15v15h-15Z" fill="#FF4B1F"/></g></svg></div></div><div class="rule-lab">INK ON CREAM · PRIMARY</div></div>
+        <div class="rule-cell"><div class="rule-art dark"><div class="art " style="width:110.35px;height:30.90px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -1.5 367.83 103" fill="none" role="img" aria-label="RAIL"><title>RAIL</title><g transform="translate(0 1.5)"><path transform="translate(0 0)" d="M0.06 100V-0.06H63.35Q74.26 -0.06 81.34 3.94Q88.43 7.93 91.95 14.96Q95.48 21.98 95.48 31.11Q95.48 40.52 91.02 48.15Q86.56 55.77 77.64 59.8L98.57 100H76.18L57.81 63.41H20.29V100ZM20.29 46.53H60.03Q67.14 46.53 70.99 42.39Q74.84 38.25 74.84 31.28Q74.84 26.71 73.15 23.54Q71.46 20.38 68.16 18.72Q64.87 17.06 60.03 17.06H20.29Z" fill="#F2EDE2"/><path transform="translate(110.54 0)" d="M-0.06 100 43.35 -0.06H67.73L111.23 100H89.16L80.55 79.48H29.36L20.76 100ZM36.44 62.68H73.38L62.68 36.62Q62.04 35.1 61.01 32.49Q59.97 29.88 58.89 26.95Q57.81 24.02 56.85 21.4Q55.89 18.78 55.39 17.41H54.49Q53.44 20.32 52.03 24.11Q50.61 27.9 49.3 31.31Q47.99 34.72 47.14 36.68Z" fill="#F2EDE2"/><path transform="translate(231.77 0)" d="M0.06 100V-0.06H20.29V100Z" fill="#F2EDE2"/><path transform="translate(262.03 0)" d="M0.06 100V-0.06H20.29V82.3H75.8V100Z" fill="#F2EDE2"/><path transform="translate(352.83 0)" d="M0 85h15v15h-15Z" fill="#FF4B1F"/></g></svg></div></div><div class="rule-lab">CREAM + SIGNAL ON NOIR</div></div>
+        <div class="rule-cell"><div class="rule-art dark"><div class="art " style="width:110.35px;height:30.90px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -1.5 367.83 103" fill="none" role="img" aria-label="RAIL"><title>RAIL</title><g transform="translate(0 1.5)"><path transform="translate(0 0)" d="M0.06 100V-0.06H63.35Q74.26 -0.06 81.34 3.94Q88.43 7.93 91.95 14.96Q95.48 21.98 95.48 31.11Q95.48 40.52 91.02 48.15Q86.56 55.77 77.64 59.8L98.57 100H76.18L57.81 63.41H20.29V100ZM20.29 46.53H60.03Q67.14 46.53 70.99 42.39Q74.84 38.25 74.84 31.28Q74.84 26.71 73.15 23.54Q71.46 20.38 68.16 18.72Q64.87 17.06 60.03 17.06H20.29Z" fill="#F2EDE2"/><path transform="translate(110.54 0)" d="M-0.06 100 43.35 -0.06H67.73L111.23 100H89.16L80.55 79.48H29.36L20.76 100ZM36.44 62.68H73.38L62.68 36.62Q62.04 35.1 61.01 32.49Q59.97 29.88 58.89 26.95Q57.81 24.02 56.85 21.4Q55.89 18.78 55.39 17.41H54.49Q53.44 20.32 52.03 24.11Q50.61 27.9 49.3 31.31Q47.99 34.72 47.14 36.68Z" fill="#F2EDE2"/><path transform="translate(231.77 0)" d="M0.06 100V-0.06H20.29V100Z" fill="#F2EDE2"/><path transform="translate(262.03 0)" d="M0.06 100V-0.06H20.29V82.3H75.8V100Z" fill="#F2EDE2"/><path transform="translate(352.83 0)" d="M0 85h15v15h-15Z" fill="#F2EDE2"/></g></svg></div></div><div class="rule-lab">MONO — SINGLE COLOR</div></div>
+        <div class="rule-cell"><div class="rule-art dark small"><div class="art" style="width:16px;height:16px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32"><title>RAIL</title><rect width="32" height="32" rx="7" fill="#070908"/><path transform="translate(4 6.36) scale(0.19) translate(0 0)" d="M0.06 100V-0.06H63.35Q74.26 -0.06 81.34 3.94Q88.43 7.93 91.95 14.96Q95.48 21.98 95.48 31.11Q95.48 40.52 91.02 48.15Q86.56 55.77 77.64 59.8L98.57 100H76.18L57.81 63.41H20.29V100ZM20.29 46.53H60.03Q67.14 46.53 70.99 42.39Q74.84 38.25 74.84 31.28Q74.84 26.71 73.15 23.54Q71.46 20.38 68.16 18.72Q64.87 17.06 60.03 17.06H20.29Z" fill="#F2EDE2"/><path transform="translate(4 6.36) scale(0.19) translate(107.54 0)" d="M0 83h17v17h-17Z" fill="#FF4B1F"/></svg></div></div><div class="rule-lab">16PX FAVICON</div></div>
+      </div>
+      <div class="rule-foot">MARK ORANGE = SIGNAL ONLY · NEVER GRADIENT · NEVER OUTLINE-ONLY · NEVER ADD “CREDIT ENGINE”</div>
+    </section>
+    <footer class="foot">
+      <span>DIRECTION A — SIGNAL RAIL</span>
+      <span>wordmark.svg · mark.svg · lockup.svg · + inverse / mono</span>
+      <span>DESIGN/LOGO/A/</span>
+    </footer>
+</body></html>
