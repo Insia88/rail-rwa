@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" />
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1200px; height: 630px; overflow: hidden; }
+      body {
+        background: #f5f1e8;
+        color: #101512;
+        font-family: "Pretendard Variable", Pretendard, sans-serif;
+        position: relative;
+      }
+      .grid {
+        position: absolute; inset: 0;
+        background-image:
+          linear-gradient(to right, rgba(215,208,191,.55) 1px, transparent 1px),
+          linear-gradient(to bottom, rgba(215,208,191,.55) 1px, transparent 1px);
+        background-size: 48px 48px;
+      }
+      .inner { position: relative; padding: 52px 64px; display: flex; height: 100%; gap: 48px; }
+      .left { width: 660px; display: flex; flex-direction: column; }
+      .brand { display: flex; align-items: center; gap: 12px; }
+      .mark { width: 34px; height: 34px; border: 1.6px solid #101512; display: grid; place-items: center; }
+      .word { font-family: "IBM Plex Mono", monospace; font-size: 25px; letter-spacing: .24em; font-weight: 600; }
+      .sub { font-family: "IBM Plex Mono", monospace; font-size: 10px; letter-spacing: .2em; color: #6f776f; margin-left: 8px; }
+      .eyebrow { margin-top: 86px; font-family: "IBM Plex Mono", monospace; font-size: 11px; letter-spacing: .24em; color: #6f776f; }
+      h1 { margin-top: 18px; font-family: "Noto Serif KR", serif; font-weight: 600; font-size: 78px; line-height: 1.12; letter-spacing: -.03em; }
+      h1 em { font-style: normal; color: #e8451f; }
+      .thesis { margin-top: 22px; font-family: "Noto Serif KR", serif; font-size: 26px; color: #343d37; letter-spacing: -.02em; }
+      .desc { margin-top: 18px; font-size: 16px; line-height: 1.7; color: #343d37; max-width: 520px; word-break: keep-all; }
+      .meta { margin-top: auto; display: flex; align-items: center; gap: 14px; font-family: "IBM Plex Mono", monospace; font-size: 10px; letter-spacing: .14em; color: #6f776f; }
+      .dot { width: 5px; height: 5px; border-radius: 50%; background: #15654f; }
+      .card {
+        margin-top: 30px; width: 420px; align-self: flex-start; transform: rotate(-1.6deg);
+        background: #0b1410; color: #f5f1e8; border: 1px solid #2b3a31;
+        box-shadow: 18px 22px 0 rgba(16,21,18,.08);
+        padding: 26px 28px 22px;
+      }
+      .card-top { display: flex; justify-content: space-between; font-family: "IBM Plex Mono", monospace; font-size: 9px; letter-spacing: .2em; color: rgba(245,241,232,.55); }
+      .card-title { margin-top: 20px; font-family: "Noto Serif KR", serif; font-size: 38px; letter-spacing: -.02em; }
+      .card-sub { margin-top: 4px; font-family: "IBM Plex Mono", monospace; font-size: 9px; letter-spacing: .16em; color: rgba(245,241,232,.45); }
+      .card-mid { margin-top: 26px; display: flex; justify-content: space-between; align-items: flex-end; border-top: 1px solid #2b3a31; padding-top: 18px; }
+      .score { font-family: "Noto Serif KR", serif; font-size: 62px; line-height: 1; }
+      .score span { font-size: 18px; color: rgba(245,241,232,.45); margin-left: 6px; }
+      .grade { border: 1px solid rgba(169,127,44,.65); color: #d8b877; font-family: "IBM Plex Mono", monospace; font-size: 30px; padding: 4px 16px; }
+      .rows { margin-top: 20px; display: flex; flex-direction: column; gap: 10px; }
+      .row { display: flex; justify-content: space-between; font-family: "IBM Plex Mono", monospace; font-size: 11px; color: rgba(245,241,232,.72); border-bottom: 1px solid #1c2a22; padding-bottom: 8px; }
+      .row b { color: #f5f1e8; font-weight: 500; }
+      .stamp { margin-top: 18px; display: inline-block; border: 1px solid rgba(169,127,44,.6); color: #d8b877; font-family: "IBM Plex Mono", monospace; font-size: 9px; letter-spacing: .2em; padding: 6px 10px; }
+      .url { margin-top: auto; font-family: "IBM Plex Mono", monospace; font-size: 11px; letter-spacing: .1em; color: #6f776f; }
+    </style>
+  </head>
+  <body>
+    <div class="grid"></div>
+    <div class="inner">
+      <div class="left">
+        <div class="brand">
+          <div class="mark">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <path d="M5 18.5 12 5.5l7 13" stroke="#101512" stroke-width="1.6" />
+              <path d="M8.2 13.5h7.6" stroke="#e8451f" stroke-width="1.6" />
+            </svg>
+          </div>
+          <div class="word">RAIL</div>
+          <div class="sub">CREDIT ENGINE</div>
+        </div>
+        <div class="eyebrow">RWA CREDIT RAIL · SEOUL · 2026</div>
+        <h1>매출은 있는데,<br />신용이 <em>없습니다</em>.</h1>
+        <div class="thesis">은행은 담보를 봅니다. RAIL은 흐름을 봅니다.</div>
+        <div class="desc">수출대금·정산 이력·특허를 온체인 증거로 검증해 담보 없는 기업의 신용 여권을 발급하고, 승인된 수출채권을 RWA로 토큰화해 스테이블코인 유동성과 연결합니다.</div>
+        <div class="meta"><span class="dot"></span>LIVE DEMO · rail-rwa.vercel.app</div>
+      </div>
+      <div class="card">
+        <div class="card-top"><span>REPUBLIC OF RAIL</span><span>CREDIT PASSPORT</span></div>
+        <div class="card-title">한빛전자</div>
+        <div class="card-sub">HANBIT ELECTRONICS · BUSAN · EXPORTER</div>
+        <div class="card-mid">
+          <div class="score">73.4<span>/100</span></div>
+          <div class="grade">B</div>
+        </div>
+        <div class="rows">
+          <div class="row"><span>승인 한도</span><b>1억 8,000만원</b></div>
+          <div class="row"><span>적용 금리</span><b>8.55% APR</b></div>
+          <div class="row"><span>증빙 커버리지</span><b>72.0%</b></div>
+          <div class="row"><span>RWA 증서</span><b>RAIL-R-2026-0001</b></div>
+        </div>
+        <div class="stamp">VERIFIED · ONCHAIN EVIDENCE</div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,330 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400..900&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400;500;600&display=swap" />
+<title>RAIL — share card</title>
+<style>
+  :root {
+    --ink: #070908;
+    --ink2: #0C110F;
+    --cream: #F2EDE2;
+    --signal: #FF4B1F;
+    --signal2: #FF7B4D;
+    --glow: #FFB39B;
+    --acid: #D9FF5C;
+    --chrome: #E9EFEA;
+    --chrome1: #6E7A74;
+    --mono: "IBM Plex Mono", ui-monospace, monospace;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1200px; height: 630px; overflow: hidden; }
+  body {
+    position: relative;
+    background: var(--ink);
+    color: var(--cream);
+    font-family: "Pretendard Variable", Pretendard, "Malgun Gothic", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: geometricPrecision;
+  }
+  .layer { position: absolute; inset: 0; }
+
+  /* ── night + ignition bed ─────────────────────────────────────────── */
+  .base {
+    background:
+      radial-gradient(760px 440px at 90% 30%, rgba(255, 75, 31, 0.24), transparent 64%),
+      radial-gradient(560px 400px at 78% 82%, rgba(255, 123, 77, 0.12), transparent 68%),
+      linear-gradient(178deg, #070908 0%, #080B0A 58%, #070908 100%);
+  }
+  .art {
+    position: absolute;
+    top: -7%;
+    right: -6%;
+    width: 80%;
+    height: 118%;
+    object-fit: cover;
+    object-position: 62% 46%;
+    opacity: 0.92;
+    filter: saturate(1.05) contrast(1.04);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.55) 24%, #000 52%);
+    mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.55) 24%, #000 52%);
+  }
+  /* text safety: the left half falls to near-black, the right keeps the art */
+  .scrim {
+    background:
+      linear-gradient(96deg, rgba(7, 9, 8, 1) 0%, rgba(7, 9, 8, 0.985) 27%,
+        rgba(7, 9, 8, 0.86) 46%, rgba(7, 9, 8, 0.34) 70%, rgba(7, 9, 8, 0.10) 100%),
+      linear-gradient(0deg, rgba(7, 9, 8, 0.55) 0%, transparent 26%);
+  }
+  .grain {
+    background-image: url("../../public/art/grain.png");
+    background-size: 512px 512px;
+    opacity: 0.13;
+    mix-blend-mode: overlay;
+  }
+  .frame {
+    position: absolute;
+    inset: 20px;
+    border: 1px solid rgba(242, 237, 226, 0.13);
+  }
+
+  /* ── layout ───────────────────────────────────────────────────────── */
+  .inner { position: absolute; inset: 0; padding: 46px 70px 38px; }
+  .col-left { width: 646px; height: 100%; display: flex; flex-direction: column; }
+
+  .brand { display: flex; align-items: center; gap: 13px; }
+  .mark { display: block; }
+  .word {
+    font-family: "Archivo", "Pretendard Variable", sans-serif;
+    font-size: 23px;
+    font-weight: 600;
+    letter-spacing: -0.018em;
+    line-height: 1;
+    margin-top: 2px;
+  }
+  .signal-square { display: inline-block; width: 6px; height: 6px; background: var(--signal); margin-left: 2px; align-self: flex-end; margin-bottom: 1px; }
+  .word-sub {
+    font-family: var(--mono);
+    font-size: 8.4px;
+    letter-spacing: 0.20em;
+    color: rgba(242, 237, 226, 0.42);
+    margin-left: 2px;
+    margin-top: 3px;
+  }
+
+  .kicker {
+    margin-top: 52px;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.26em;
+    color: rgba(242, 237, 226, 0.58);
+  }
+  .dot { width: 5px; height: 5px; border-radius: 50%; background: var(--signal); flex: 0 0 5px; }
+  .dot.acid { background: var(--acid); box-shadow: 0 0 8px rgba(217, 255, 92, 0.55); }
+
+  h1 {
+    margin-top: 18px;
+    font-size: 78px;
+    line-height: 0.99;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    word-break: keep-all;
+    text-shadow: 0 2px 34px rgba(7, 9, 8, 0.55);
+  }
+  h1 em {
+    font-style: normal;
+    color: var(--signal);
+    text-shadow: 0 0 46px rgba(255, 75, 31, 0.38);
+  }
+  .rule {
+    margin-top: 30px;
+    width: 424px;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(242, 237, 226, 0.30), rgba(242, 237, 226, 0.02));
+  }
+  .lede {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.74;
+    letter-spacing: -0.012em;
+    color: rgba(242, 237, 226, 0.62);
+    word-break: keep-all;
+  }
+  .stat {
+    margin-top: 22px;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    font-family: var(--mono);
+    font-size: 9px;
+    letter-spacing: 0.155em;
+    color: rgba(242, 237, 226, 0.44);
+  }
+  .stat i {
+    display: block; width: 4px; height: 4px; background: var(--signal);
+    transform: rotate(45deg); flex: 0 0 4px;
+  }
+
+  .foot {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    color: rgba(242, 237, 226, 0.82);
+  }
+  .foot .url { position: relative; padding-left: 14px; }
+  .foot .url::before {
+    content: "";
+    position: absolute; left: 0; top: 50%; transform: translateY(-50%);
+    width: 6px; height: 6px; background: var(--signal);
+  }
+  .foot-sep { width: 1px; height: 14px; background: rgba(242, 237, 226, 0.18); }
+  .live {
+    display: flex; align-items: center; gap: 8px;
+    font-size: 8.6px; letter-spacing: 0.24em; color: rgba(242, 237, 226, 0.48);
+  }
+
+  .sig {
+    position: absolute;
+    right: 78px;
+    bottom: 34px;
+    font-family: "Instrument Serif", "Noto Serif KR", serif;
+    font-style: italic;
+    font-size: 19px;
+    letter-spacing: 0.01em;
+    color: rgba(242, 237, 226, 0.40);
+  }
+
+  /* ── passport artifact ────────────────────────────────────────────── */
+  .card-wrap {
+    position: absolute;
+    right: 92px;
+    top: 50%;
+    transform: translateY(-50%) rotate(-3.2deg);
+  }
+  .card-glow {
+    position: absolute;
+    left: -70px; right: -70px; top: -56px; bottom: -56px;
+    background: radial-gradient(closest-side, rgba(255, 75, 31, 0.30), rgba(255, 75, 31, 0.04) 62%, transparent 78%);
+    filter: blur(12px);
+  }
+  .card {
+    position: relative;
+    width: 304px;
+    padding: 19px 21px 16px;
+    border: 1.2px solid transparent;
+    border-radius: 2px;
+    background:
+      linear-gradient(158deg, #101814 0%, #0A0E0C 52%, #0C1310 100%) padding-box,
+      linear-gradient(148deg, #6E7A74 0%, #E9EFEA 18%, #8C978F 38%, #F2EDE2 56%, #5F6A64 76%, #E9EFEA 100%) border-box;
+    box-shadow:
+      0 40px 80px -30px rgba(255, 75, 31, 0.42),
+      0 26px 64px rgba(0, 0, 0, 0.62),
+      inset 0 1px 0 rgba(242, 237, 226, 0.16);
+  }
+  .card-head {
+    display: flex; justify-content: space-between;
+    font-family: var(--mono); font-size: 7.4px; letter-spacing: 0.20em;
+    color: rgba(242, 237, 226, 0.50);
+  }
+  .card-name { margin-top: 21px; font-size: 25px; font-weight: 700; letter-spacing: -0.02em; }
+  .card-sub {
+    margin-top: 6px;
+    font-family: var(--mono); font-size: 7.2px; letter-spacing: 0.13em;
+    color: rgba(242, 237, 226, 0.40);
+  }
+  .card-score {
+    margin-top: 20px; padding-top: 15px;
+    border-top: 1px solid rgba(242, 237, 226, 0.13);
+    display: flex; align-items: flex-end; justify-content: space-between;
+  }
+  .score {
+    font-size: 54px; font-weight: 800; line-height: 0.86;
+    letter-spacing: -0.05em; font-variant-numeric: tabular-nums;
+  }
+  .score i {
+    font-style: normal; font-size: 13px; font-weight: 400;
+    letter-spacing: 0; color: rgba(242, 237, 226, 0.34); margin-left: 5px;
+  }
+  .grade {
+    font-family: var(--mono); font-size: 25px; font-weight: 500; line-height: 1;
+    color: var(--acid);
+    border: 1px solid rgba(217, 255, 92, 0.42);
+    padding: 3px 12px 4px;
+    box-shadow: 0 0 24px rgba(217, 255, 92, 0.12), inset 0 0 12px rgba(217, 255, 92, 0.05);
+  }
+  .rows { margin-top: 17px; }
+  .row {
+    display: flex; justify-content: space-between; align-items: baseline;
+    padding: 7.5px 0 6.5px;
+    border-top: 1px solid rgba(242, 237, 226, 0.10);
+    font-family: var(--mono); font-size: 8.2px; letter-spacing: 0.11em;
+    color: rgba(242, 237, 226, 0.44);
+  }
+  .row b {
+    font-family: "Pretendard Variable", Pretendard, sans-serif;
+    font-size: 11.5px; font-weight: 600; letter-spacing: -0.01em;
+    color: #F2EDE2; font-variant-numeric: tabular-nums;
+  }
+  .stamp {
+    margin-top: 15px; display: inline-block;
+    font-family: var(--mono); font-size: 6.8px; letter-spacing: 0.20em;
+    color: var(--signal2);
+    border: 1px solid rgba(255, 75, 31, 0.42);
+    padding: 5px 8px 4px;
+  }
+  .card-id {
+    margin-top: 11px;
+    font-family: var(--mono); font-size: 6.8px; letter-spacing: 0.16em;
+    color: rgba(242, 237, 226, 0.28);
+  }
+</style>
+</head>
+<body>
+  <div class="base layer"></div>
+  <img class="art" src="../../public/art/hero-rail.webp" alt="" />
+  <div class="scrim layer"></div>
+  <div class="grain layer"></div>
+  <div class="frame"></div>
+
+  <div class="inner">
+    <div class="col-left">
+      <div class="brand">
+      <span class="word">RAIL</span><span class="signal-square"></span>
+      <span class="word-sub">CREDIT PASSPORT</span>
+      </div>
+
+      <div class="kicker"><span class="dot"></span>RWA CREDIT RAIL · SEOUL · 2026</div>
+
+      <h1>매출은 있는데,<br />신용이 <em>없습니다.</em></h1>
+
+      <div class="rule"></div>
+
+      <p class="lede">
+        수출대금·정산 이력·특허를 온체인 증거로 검증해<br />
+        담보 없는 기업의 신용 여권을 발급합니다.
+      </p>
+
+      <div class="stat"><i></i>EXPORT RECEIVABLES · 84.2% SETTLED IN USD</div>
+
+      <div class="foot">
+        <span class="url">rail-rwa.vercel.app</span>
+        <span class="foot-sep"></span>
+        <span class="live"><span class="dot acid"></span>MARKET LIVE</span>
+      </div>
+    </div>
+
+    <div class="card-wrap">
+      <div class="card-glow"></div>
+      <div class="card">
+        <div class="card-head">
+          <span>REPUBLIC OF RAIL</span>
+          <span>CREDIT PASSPORT</span>
+        </div>
+        <div class="card-name" data-fig="applicantName">한빛전자</div>
+        <div class="card-sub" data-fig="profileLine">부산광역시 · EXPORTER · EST. 2024</div>
+        <div class="card-score">
+          <div class="score"><span data-fig="score">73.4</span><i>/100</i></div>
+          <div class="grade" data-fig="grade">B</div>
+        </div>
+        <div class="rows">
+          <div class="row"><span>승인 한도</span><b data-fig="limitKrwText">1억 8,000만원</b></div>
+          <div class="row"><span>적용 금리</span><b data-fig="aprText">8.55%</b></div>
+          <div class="row"><span>증빙 커버리지</span><b data-fig="coverageText">72.0%</b></div>
+        </div>
+        <div class="stamp">VERIFIED · ONCHAIN EVIDENCE</div>
+        <div class="card-id" data-fig="passportId">RAIL-P-2026-0001</div>
+      </div>
+    </div>
+
+    <div class="sig">Night Signal · v2</div>
+  </div>
+</body>
+</html>

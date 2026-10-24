@@ -1,0 +1,42 @@
+name: Partner / pilot introduction
+description: RAIL 파일럿 파트너(수출기업·팩토링사·무역보험·LP) 소개
+title: "[Partner] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        RAIL의 첫 파일럿 파트너를 찾고 있습니다. 소개해 주실 곳이 있다면 알려주세요.
+        공개 Issue이므로 상대방의 개인 연락처는 직접 적지 마시고, 소개 경로만 남겨주세요.
+  - type: dropdown
+    id: type
+    attributes:
+      label: 유형
+      options:
+        - 수출 중소기업 (부산·대구 등)
+        - 팩토링사 / 여신 전문 금융사
+        - 무역보험 / 정책금융
+        - 스테이블코인 LP / RWA 투자자
+        - 기타
+    validations:
+      required: true
+  - type: textarea
+    id: intro
+    attributes:
+      label: 소개할 곳
+      description: 회사/담당자(공개 가능한 범위), 왜 RAIL과 적합한지.
+    validations:
+      required: true
+  - type: textarea
+    id: next
+    attributes:
+      label: 다음 단계 제안
+      description: 15분 통화, 데모 시연, 데이터 공유 등.
+    validations:
+      required: false
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: 공개 기록 동의
+      options:
+        - label: 민감정보를 제외하고 이 내용이 공개 Issue로 기록되는 것에 동의합니다.
+          required: true

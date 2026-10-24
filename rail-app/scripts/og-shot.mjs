@@ -1,0 +1,12 @@
+﻿import puppeteer from "puppeteer-core";
+import path from "node:path";
+const browser = await puppeteer.launch({ executablePath: "C:/Program Files/Google/Chrome/Application/chrome.exe", headless: true, args: ["--no-sandbox","--hide-scrollbars"] });
+const page = await browser.newPage();
+await page.setViewport({ width: 1200, height: 630, deviceScaleFactor: 2 });
+const file = "file:///" + path.resolve("scripts/og.html").replace(/\\/g, "/");
+await page.goto(file, { waitUntil: "networkidle0", timeout: 60000 });
+await page.evaluate(() => document.fonts.ready);
+await new Promise(r => setTimeout(r, 800));
+await page.screenshot({ path: "app/opengraph-image.png", clip: { x: 0, y: 0, width: 1200, height: 630 } });
+console.log("og image written");
+await browser.close();

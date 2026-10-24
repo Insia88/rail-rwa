@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400..900&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400;500&display=swap" />
+<style>
+  :root { --ink:#070908; --cream:#F2EDE2; --signal:#FF4B1F; --acid:#D9FF5C; --line:rgba(242,237,226,.16); --muted:rgba(242,237,226,.55); --mono:"IBM Plex Mono",monospace; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  @page { size: A4; margin: 0; }
+  html, body { width:210mm; height:297mm; }
+  body { background:var(--ink); color:var(--cream); font-family:"Pretendard Variable",Pretendard,"Malgun Gothic",sans-serif; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  .page { width:210mm; height:297mm; padding:11mm 15mm 8mm; position:relative; overflow:hidden; background:
+    radial-gradient(300px 220px at 92% 5%, rgba(255,75,31,.22), transparent 65%),
+    radial-gradient(260px 220px at 4% 97%, rgba(217,255,92,.05), transparent 70%), var(--ink); }
+  .frame { position:absolute; inset:6.5mm; border:0.3mm solid var(--line); pointer-events:none; }
+  .top { display:flex; justify-content:space-between; align-items:flex-start; }
+  .logo { height:6.4mm; width:auto; }
+  .doc-meta { text-align:right; font-family:var(--mono); font-size:2.3mm; letter-spacing:.14em; color:var(--muted); line-height:1.85; }
+  .kicker { margin-top:5mm; font-family:var(--mono); font-size:2.5mm; letter-spacing:.26em; color:var(--muted); }
+  h1 { margin-top:2mm; font-size:19mm; line-height:1.02; letter-spacing:-.02em; font-weight:800; }
+  h1 em { font-style:normal; color:var(--signal); }
+  .sub { margin-top:2.2mm; font-family:"Instrument Serif",serif; font-style:italic; font-size:5.6mm; color:rgba(242,237,226,.85); }
+  .lede { margin-top:2.4mm; font-size:2.95mm; line-height:1.55; color:rgba(242,237,226,.72); max-width:174mm; }
+  .stats { display:grid; grid-template-columns:repeat(3,1fr); margin-top:5mm; border-top:0.3mm solid var(--line); border-bottom:0.3mm solid var(--line); }
+  .stat { padding:2.7mm 0 2.4mm; border-right:0.3mm solid var(--line); }
+  .stat:last-child { border-right:none; }
+  .stat b { display:block; font-size:9.4mm; font-weight:800; letter-spacing:-.02em; line-height:1; }
+  .stat b span { font-size:4.6mm; font-weight:700; }
+  .stat span { display:block; margin-top:1.6mm; font-size:2.6mm; color:var(--muted); }
+  .grid { display:grid; grid-template-columns: 1fr 1fr; gap:7mm; margin-top:4mm; }
+  h2 { font-family:var(--mono); font-size:2.5mm; letter-spacing:.2em; color:var(--acid); text-transform:uppercase; }
+  .block { border-top:0.3mm solid var(--line); padding-top:2mm; margin-top:2mm; }
+  .rows { display:flex; flex-direction:column; }
+  .row { display:flex; justify-content:space-between; gap:3mm; padding:1.45mm 0; border-bottom:0.2mm solid rgba(242,237,226,.09); font-size:2.85mm; line-height:1.4; }
+  .row .k { flex:0 0 21mm; color:var(--muted); font-family:var(--mono); font-size:2.3mm; letter-spacing:.06em; }
+  .row .v { flex:1; text-align:right; }
+  .row .v b { color:var(--cream); }
+  .accent { color:var(--signal); }
+  .acid { color:var(--acid); }
+  .plan { margin-top:4mm; border-top:0.3mm solid var(--line); padding-top:2.8mm; }
+  .plan-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:4mm; margin-top:2.4mm; }
+  .plan-cell { border-top:1.4px solid var(--signal); padding-top:1.8mm; }
+  .plan-cell .w { font-family:var(--mono); font-size:2.2mm; letter-spacing:.14em; color:var(--muted); }
+  .plan-cell p { margin-top:1.2mm; font-size:2.6mm; line-height:1.45; color:rgba(242,237,226,.78); }
+  .footer { position:absolute; left:15mm; right:15mm; bottom:7mm; display:flex; justify-content:space-between; align-items:flex-end; border-top:0.3mm solid var(--line); padding-top:2.2mm; }
+  .url { font-family:var(--mono); font-size:2.8mm; letter-spacing:.06em; }
+  .demo-note { font-size:2mm; color:rgba(242,237,226,.32); max-width:100mm; line-height:1.5; margin-top:1.5mm; }
+  .chip { display:inline-flex; align-items:center; gap:1.2mm; font-family:var(--mono); font-size:2.1mm; color:var(--muted); border:0.25mm solid var(--line); padding:1mm 1.9mm; margin:0 1mm 1mm 0; }
+  .dot { width:1.4mm; height:1.4mm; background:var(--acid); display:inline-block; }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="frame"></div>
+  <div class="top">
+    <img class="logo" src="../../rail-app/public/brand/rail-wordmark-inverse.svg" alt="RAIL" />
+    <div class="doc-meta">NITRO SEOUL 2기 · APPLICANT ONE-PAGER<br />2026.10.22 · SEOUL</div>
+  </div>
+
+  <p class="kicker">RWA CREDIT RAIL · CREDIT PASSPORT</p>
+  <h1>은행이 읽지 못하는<br />매출을, <em>신용</em>으로.</h1>
+  <p class="sub">은행은 담보를 봅니다. RAIL은 흐름을 봅니다.</p>
+  <p class="lede">수출대금·정산 이력·특허를 온체인 증거로 검증해 담보 없는 기업의 <b>신용 여권(Credit Passport)</b>을 발급하고,
+    승인된 수출채권을 <b>RWA(ERC-3643)</b>로 토큰화해 스테이블코인 유동성과 연결합니다.
+    심사·검증·중개는 에이전트 4명(SCOUT·VERIFIER·UNDERWRITER·BROKER)이 수행하고, 숫자는 결정론적 엔진이 계산합니다.</p>
+
+  <div class="stats">
+    <div class="stat"><b>130<span>만</span></b><span>매년 새로 생기는 사업체</span></div>
+    <div class="stat"><b>84.2<span>%</span></b><span>수출대금 달러 결제 (한국은행 2025)</span></div>
+    <div class="stat"><b>1.28<span>%</span></b><span>정책금융 수출팩토링 중 중소기업 비중</span></div>
+  </div>
+
+  <div class="grid">
+    <div>
+      <h2>Demo Result — 한빛전자</h2>
+      <div class="block rows">
+        <div class="row"><span class="k">BANK</span><span class="v">국민·하나·부산은행 3곳 거절 (담보·업력·재무제표)</span></div>
+        <div class="row"><span class="k">VERIFIED</span><span class="v">증빙 커버리지 <b class="acid">72.0%</b> · 온체인 USDC 87건</span></div>
+        <div class="row"><span class="k">DECISION</span><span class="v"><b>등급 B · 1억 8,000만원 승인</b></span></div>
+        <div class="row"><span class="k">PRICE</span><span class="v"><b class="accent">연 8.55%</b> = 4.15% + 3.80%p + FX 0.60%p</span></div>
+        <div class="row"><span class="k">RWA</span><span class="v">RAIL-R-2026-0001 · Base · ERC-3643 · 62%</span></div>
+      </div>
+      <h2 style="margin-top:3.4mm">Agent Crew</h2>
+      <div class="block rows">
+        <div class="row"><span class="k">SCOUT</span><span class="v">지갑·플랫폼·수출신고·특허 증거 수집</span></div>
+        <div class="row"><span class="k">VERIFIER</span><span class="v">자기신고 vs 온체인 교차검증</span></div>
+        <div class="row"><span class="k">UNDERWRITER</span><span class="v">점수·등급·한도·금리 계산</span></div>
+        <div class="row"><span class="k">BROKER</span><span class="v">수출채권 발행 · LP 매칭 · 정산</span></div>
+      </div>
+    </div>
+    <div>
+      <h2>Evidence &amp; Traction</h2>
+      <div class="block rows">
+        <div class="row"><span class="k">LIVE DEMO</span><span class="v"><b>rail-rwa.vercel.app</b> (Vercel)</span></div>
+        <div class="row"><span class="k">DATA</span><span class="v">DefiLlama · ECB FX · Hyperliquid LIVE</span></div>
+        <div class="row"><span class="k">MCP</span><span class="v">신용 엔진 · 아트 파이프라인 MCP 2종</span></div>
+        <div class="row"><span class="k">DESIGN</span><span class="v">60개 벤치마크 → 25 레시피 → 19 반영</span></div>
+        <div class="row"><span class="k">BUILD</span><span class="v">1인 + 에이전트 크루 · 리서치→엔진→UI→배포</span></div>
+        <div class="row"><span class="k">STACK</span><span class="v">Next.js 16 · React 19 · TS · Tailwind v4 · motion · MCP</span></div>
+      </div>
+      <h2 style="margin-top:3.4mm">Why Now</h2>
+      <div class="block rows">
+        <div class="row"><span class="k">STO LAW</span><span class="v">개정안 2026-01-15 통과, 2027.1 시행(잠정)</span></div>
+        <div class="row"><span class="k">STABLECOIN</span><span class="v">$305B 유동성 · USDC 정산 채널 확장</span></div>
+        <div class="row"><span class="k">24/7</span><span class="v">코스피200·현대차·SK하이닉스 온체인 거래</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="plan">
+    <h2>Nitro 2기 8주 계획</h2>
+    <div class="plan-grid">
+      <div class="plan-cell"><p class="w">W1–2</p><p>고객 인터뷰 20건<br />증거 스키마 v2</p></div>
+      <div class="plan-cell"><p class="w">W3–4</p><p>증거 수집기 MVP<br />실기업 3곳 커버리지 80%</p></div>
+      <div class="plan-cell"><p class="w">W5–6</p><p>신용 여권 10건<br />팩토링사 LOI 1건</p></div>
+      <div class="plan-cell"><p class="w">W7–8</p><p>ERC-3643 테스트넷<br />LP 파일럿 · Game Day</p></div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div>
+      <div class="url">rail-rwa.vercel.app · github.com/Insia88/rail-rwa</div>
+      <p class="demo-note">RAIL은 데모입니다. 실제 금융 서비스가 아니며, 신용 심사·수출채권 발행·온체인 투자 기록은 시뮬레이션입니다.</p>
+    </div>
+    <div class="url" style="font-size:2.4mm; color:var(--muted)">RAIL CREDIT ENGINE · SEOUL · 2026</div>
+  </div>
+</div>
+</body>
+</html>

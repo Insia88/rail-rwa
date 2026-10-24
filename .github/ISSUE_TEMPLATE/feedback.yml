@@ -1,0 +1,51 @@
+name: Feedback
+description: RAIL 제품·구조·카피에 대한 피드백 (공개 기록)
+title: "[Feedback] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        피드백 감사합니다. 이 Issue는 공개 기록이며, 48시간 안에 트리아지하고 7일 안에 배포 여부를 회신합니다.
+        개인정보·민감정보는 남기지 마세요. 데모: https://rail-rwa.vercel.app
+  - type: textarea
+    id: context
+    attributes:
+      label: 어떤 화면/흐름인가요?
+      description: URL, 섹션, 데모 단계 중 어디인지 적어주세요.
+      placeholder: "예: /underwrite 응원자 카드 / 랜딩 Case file / 여권 03 섹션"
+    validations:
+      required: true
+  - type: textarea
+    id: friction
+    attributes:
+      label: 무엇이 불편하거나 이해되지 않나요?
+      description: "가장 도움이 되는 피드백은 '이 제품을 안 쓸 이유'입니다."
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: 어떻게 바뀌면 좋을까요?
+    validations:
+      required: false
+  - type: dropdown
+    id: area
+    attributes:
+      label: 영역
+      options:
+        - Structure / information architecture
+        - Copy / clarity
+        - Product demo / underwriter
+        - Credit passport / RWA
+        - English edition
+        - Trust / compliance surface
+        - Other
+    validations:
+      required: true
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: 공개 기록 동의
+      options:
+        - label: 이 내용이 공개 Issue로 기록되는 것에 동의합니다.
+          required: true

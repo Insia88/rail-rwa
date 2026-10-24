@@ -1,0 +1,13 @@
+{
+  "applicantName": "한빛전자",
+  "company": "한빛전자 주식회사",
+  "profileLine": "부산광역시 · EXPORTER · EST. 2024",
+  "passportId": "RAIL-P-2026-0001",
+  "score": "73.4",
+  "grade": "B",
+  "limitKrwText": "1억 8,000만원",
+  "aprText": "8.55%",
+  "coverageText": "72.0%",
+  "asOf": "2026-10-22",
+  "source": "lib/engine.ts · underwriteById('hanbit')"
+}
